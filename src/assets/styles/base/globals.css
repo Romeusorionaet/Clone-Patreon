@@ -1,0 +1,7 @@
+@tailwind base;
+
+@layer base {
+   body {
+     @apply font-inter bg-slate-500 text-white md:text-custom_base_text;
+   }
+}

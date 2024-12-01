@@ -1,0 +1,23 @@
+@tailwind utilities;
+
+@layer utilities {
+   .bg-rise-fade {
+     @apply relative overflow-hidden whitespace-nowrap rounded-full border-white 
+     before:absolute before:inset-0 before:origin-bottom before:scale-y-0 before:bg-white before:rounded-2xl before:transition-transform before:duration-300
+     hover:text-black hover:before:scale-y-100;
+
+     &::before {
+      content: "";
+      @apply z-0;
+    }
+
+    .bg-rise-fade-content {
+      @apply relative z-10 block -translate-y-9; 
+
+      &::before {
+        @apply z-10 absolute duration-300 
+        transition-transform translate-y-9 group-hover:-translate-y-9;
+      }
+    }
+   }
+}
