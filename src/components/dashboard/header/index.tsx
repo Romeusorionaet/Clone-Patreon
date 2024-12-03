@@ -4,11 +4,11 @@ import { HoverBackgroundIndicator } from './hover-background-Indicator'
 import { mainListNavigation } from '@/constants/main-list-navigation'
 import { useHoverBackground } from '@/hooks/use-hover-background'
 import '@/assets/styles/utilities/bg-rise-fade.css'
+import { SubMenu } from '@/components/sub-menu'
 import { InputHeader } from './input-header'
 import { Equal } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { SubMenu } from '@/components/sub-menu'
 
 export function Header() {
   const { hoverIndicator, handleMouseEnter, handleMouseLeave, navRef } =
@@ -33,7 +33,7 @@ export function Header() {
             <HoverBackgroundIndicator hoverIndicator={hoverIndicator} />
           )}
 
-          <ul ref={navRef} className="flex gap-1 xl:gap-10">
+          <ul ref={navRef} className="flex gap-0.5 lg:gap-2">
             {mainListNavigation.map((item, index) => {
               const isHovered =
                 hoverIndicator.visible && hoverIndicator.index === index
@@ -47,7 +47,7 @@ export function Header() {
                       handleMouseEnter(index)
                     }
                   }}
-                  className="bg-rise-fade group cursor-pointer px-2 py-2 font-medium before:bg-transparent hover:text-white md:py-custom_1"
+                  className="bg-rise-fade group cursor-pointer font-medium before:bg-transparent hover:text-white md:py-custom_1"
                 >
                   <Link href="#">
                     <div className="overflow-hidden">
@@ -65,7 +65,7 @@ export function Header() {
             })}
             <li
               data-value={hoverIndicator.visible}
-              className="bg-rise-fade group cursor-pointer px-2 py-2 font-medium hover:border-transparent data-[value=true]:border-black data-[value=true]:hover:text-white data-[value=true]:hover:before:bg-black md:border md:py-custom_1"
+              className="bg-rise-fade group cursor-pointer font-medium hover:border-transparent data-[value=true]:border-black data-[value=true]:hover:text-white data-[value=true]:hover:before:bg-black md:border"
             >
               <Link href="#">
                 <div className="overflow-hidden">
@@ -78,7 +78,7 @@ export function Header() {
           </ul>
         </nav>
 
-        <nav className="z-10 lg:flex lg:w-full lg:items-center lg:justify-center lg:pl-36">
+        <nav className="z-10 lg:flex lg:w-full lg:items-center lg:justify-center">
           <ul className="flex items-center gap-3">
             <li className="max-md_middle:hidden">
               <Link
@@ -108,7 +108,7 @@ export function Header() {
         </nav>
 
         <div className="flex max-md:flex-col-reverse">
-          <div className="flex w-full px-2 max-md:absolute max-md:left-0 max-md:top-[4.5rem] md:w-auto lg:w-64 lg:justify-end xl:w-[26rem] 2xl:w-[30rem]">
+          <div className="flex w-full px-2 max-md:absolute max-md:left-0 max-md:top-[4.5rem] md:w-auto lg:w-64 lg:justify-end 2xl:w-96">
             <InputHeader hoverIndicatorVisible={hoverIndicator.visible} />
           </div>
 
@@ -127,7 +127,7 @@ export function Header() {
             <Link
               href="#"
               data-value={hoverIndicator.visible}
-              className="bg-rise-fade group rounded-full bg-white px-4 py-2 font-medium text-black data-[value=true]:bg-black data-[value=true]:text-white data-[value=true]:before:bg-black md:px-6 md:py-custom_1"
+              className="bg-rise-fade group rounded-full bg-white px-4 py-2 font-medium text-black data-[value=true]:bg-black data-[value=true]:text-white data-[value=true]:before:bg-black md:p-custom_1 md:px-6"
             >
               <div className="overflow-hidden">
                 <span className="bg-rise-fade-content before:content-['Comece'] group-hover:animate-rise-from-bottom">
