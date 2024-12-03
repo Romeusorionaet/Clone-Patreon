@@ -6,6 +6,7 @@ export type HoverIndicatorType = {
   left: number
   top: number
   visible: boolean
+  index: number | null
 }
 
 export function useHoverBackground() {
@@ -15,6 +16,7 @@ export function useHoverBackground() {
     left: 0,
     top: 0,
     visible: false,
+    index: 0,
   })
 
   const navRef = useRef<HTMLUListElement | null>(null)
@@ -31,12 +33,13 @@ export function useHoverBackground() {
         left: left - navRef.current.offsetLeft,
         top: top - navTop,
         visible: true,
+        index,
       })
     }
   }
 
   const handleMouseLeave = () => {
-    setHoverIndicator((prev) => ({ ...prev, visible: false }))
+    setHoverIndicator((prev) => ({ ...prev, visible: false, index: null }))
   }
 
   return { hoverIndicator, handleMouseEnter, handleMouseLeave, navRef }
