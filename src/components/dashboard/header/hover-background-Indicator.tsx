@@ -1,17 +1,17 @@
-import { HoverIndicatorType } from '@/hooks/use-hover-background'
+import { EventIndicatorType } from '@/hooks/use-hover-background'
 
 export function HoverBackgroundIndicator({
-  hoverIndicator,
+  eventIndicator,
 }: {
-  hoverIndicator: HoverIndicatorType
+  eventIndicator: EventIndicatorType
 }) {
   return (
     <div
       className={`absolute rounded-full bg-black transition-all duration-300 ease-in-out`}
       style={{
-        width: `${hoverIndicator.width}px`,
-        height: `${hoverIndicator.height}px`,
-        transform: `translate(${hoverIndicator.left}px, ${hoverIndicator.top}px)`,
+        width: `${eventIndicator.width}px`,
+        height: `${eventIndicator.height}px`,
+        transform: `translate(${eventIndicator.left}px, ${eventIndicator.top}px)`,
       }}
     />
   )

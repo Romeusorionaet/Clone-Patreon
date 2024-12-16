@@ -5,9 +5,9 @@ import { useState } from 'react'
 import '@/assets/styles/utilities/input-header-container.css'
 
 export function InputHeader({
-  hoverIndicatorVisible,
+  eventIndicatorVisible,
 }: {
-  hoverIndicatorVisible: boolean
+  eventIndicatorVisible: boolean
 }) {
   const [inputValue, setInputValue] = useState('')
 
@@ -16,7 +16,7 @@ export function InputHeader({
   }
   return (
     <div
-      data-value={hoverIndicatorVisible}
+      data-value={eventIndicatorVisible}
       className="input-header-container group data-[value=true]:border-black"
     >
       <button className="min-h-3 min-w-3 duration-300 max-md:group-focus-within:h-8 max-md:group-focus-within:w-8 max-md:group-focus-within:text-black">
