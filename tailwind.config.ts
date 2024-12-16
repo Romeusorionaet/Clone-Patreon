@@ -19,7 +19,7 @@ export default {
       },
 
       fontSize: {
-        custom_base_text: 'clamp(0.71rem, 1vw, 1.1rem)',
+        custom_base_text: 'clamp(0.71rem, 0.90vw, 1rem)',
         custom_patreon: 'clamp(0.90rem, 1.4vw, 1.9rem)',
         custom_1: 'clamp(0.65rem, 0.75vw, 0.90rem)',
         custom_2: 'clamp(0.80rem, 1.1vw, 1.2rem)',
@@ -27,7 +27,7 @@ export default {
 
       padding: {
         custom_container_header: 'clamp(1.25rem, 2.5vw, 3rem)',
-        custom_1: 'clamp(0.60rem, 0.95vw, 1.5rem)',
+        custom_1: 'clamp(0.60rem, 0.95vw, 1.4rem)',
         custom_2: 'clamp(5rem, 8vw, 12rem)',
       },
 
@@ -45,7 +45,7 @@ export default {
 
       width: {
         34: '134px',
-      }, // ver se to usando
+      },
 
       screens: {
         md_custom_1: '832px',
