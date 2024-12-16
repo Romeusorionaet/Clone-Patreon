@@ -22,6 +22,7 @@ export default {
         custom_base_text: 'clamp(0.71rem, 1vw, 1.1rem)',
         custom_patreon: 'clamp(0.90rem, 1.4vw, 1.9rem)',
         custom_1: 'clamp(0.65rem, 0.75vw, 0.90rem)',
+        custom_2: 'clamp(0.80rem, 1.1vw, 1.2rem)',
       },
 
       padding: {
@@ -35,14 +36,19 @@ export default {
       },
 
       gap: {
-        custom_1: 'clamp(0.70rem, 1.1vw, 1.6rem)',
+        custom_1: 'clamp(0.70rem, 1vw, 1.4rem)',
       },
 
       margin: {
         custom_1: 'clamp(1rem, 1.9vw, 2.5rem)',
       },
 
+      width: {
+        34: '134px',
+      }, // ver se to usando
+
       screens: {
+        md_custom_1: '832px',
         md_middle: '850px',
       },
 

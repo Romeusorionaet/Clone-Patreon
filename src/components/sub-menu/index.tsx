@@ -1,6 +1,10 @@
 import { useEffect, useRef } from 'react'
 import { SubMenuItem } from '@/components/sub-menu/sub-menu-item'
-import { subMenuCreatorsData } from '@/constants/sub-menu-creators-data'
+import { creatorsMenu } from '@/constants/sub-menu-list/creators-menu'
+import { featuresMenu } from '@/constants/sub-menu-list/features-menu'
+import { pricesMenu } from '@/constants/sub-menu-list/prices-menu'
+import { resourcesMenu } from '@/constants/sub-menu-list/resources-menu'
+import '@/assets/styles/utilities/custom-width-title.css'
 
 export interface SubMenuProps {
   hoverIndicator: { visible: boolean }
@@ -30,25 +34,67 @@ export const SubMenu = ({ hoverIndicator, menuIndex }: SubMenuProps) => {
       >
         <nav className="w-full">
           <ul
+            id="submenu-creators"
             role="menubar"
-            aria-hidden={!hoverIndicator.visible}
+            aria-hidden={menuIndex !== 0}
             data-value={menuIndex === 0}
-            className="flex w-full justify-between gap-5 data-[value=false]:hidden"
+            className="custom-width-title-creators flex w-full justify-between gap-5 data-[value=false]:hidden"
           >
-            {subMenuCreatorsData.map((section, index) => (
-              <div key={index}>
-                <SubMenuItem title={section.title} items={section.items} />
-              </div>
+            {creatorsMenu.map((section, index) => (
+              <SubMenuItem
+                key={index}
+                title={section.title}
+                items={section.items}
+              />
             ))}
           </ul>
 
           <ul
+            id="submenu-features"
             role="menubar"
-            aria-hidden={!hoverIndicator.visible}
+            aria-hidden={menuIndex !== 1}
             data-value={menuIndex === 1}
-            className="flex data-[value=false]:hidden"
+            className="custom-width-title-features flex w-full justify-between gap-5 data-[value=false]:hidden"
           >
-            <li>teste</li>
+            {featuresMenu.map((section, index) => (
+              <SubMenuItem
+                key={index}
+                title={section.title}
+                items={section.items}
+              />
+            ))}
+          </ul>
+
+          <ul
+            id="submenu-prices"
+            role="menubar"
+            aria-hidden={menuIndex !== 2}
+            data-value={menuIndex === 2}
+            className="flex w-full justify-between gap-5 data-[value=false]:hidden"
+          >
+            {pricesMenu.map((section, index) => (
+              <SubMenuItem
+                key={index}
+                title={section.title}
+                items={section.items}
+              />
+            ))}
+          </ul>
+
+          <ul
+            id="submenu-resources"
+            role="menubar"
+            aria-hidden={menuIndex !== 3}
+            data-value={menuIndex === 3}
+            className="custom-width-title-resources flex w-full justify-between gap-5 data-[value=false]:hidden"
+          >
+            {resourcesMenu.map((section, index) => (
+              <SubMenuItem
+                key={index}
+                title={section.title}
+                items={section.items}
+              />
+            ))}
           </ul>
         </nav>
       </div>

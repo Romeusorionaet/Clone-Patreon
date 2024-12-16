@@ -1,0 +1,23 @@
+@tailwind utilities;
+
+@layer utilities {
+   .custom-width-title-features li a {
+     @apply max-lg:w-34
+   }
+
+   .custom-width-title-features li:nth-child(3) a {
+    @apply max-lg:w-28
+   }
+
+   .custom-width-title-features li:nth-child(5) a {
+    @apply max-lg:w-28
+   }
+
+   .custom-width-title-resources li:nth-child(4) a {
+    @apply max-xl:w-32
+   }
+
+   .custom-width-title-creators li:nth-child(5) a {
+    @apply max-lg:w-32
+   }
+}
