@@ -24,7 +24,7 @@ export const SubMenu = ({ hoverIndicator, menuIndex }: SubMenuProps) => {
   return (
     <div
       ref={submenuRef}
-      aria-hidden={!hoverIndicator.visible}
+      inert={!hoverIndicator.visible}
       data-value={hoverIndicator.visible}
       className="w-full -translate-y-96 bg-white pt-custom_2 transition-all duration-500 ease-out data-[value=true]:translate-y-0 data-[value=false]:opacity-20"
     >
@@ -36,7 +36,7 @@ export const SubMenu = ({ hoverIndicator, menuIndex }: SubMenuProps) => {
           <ul
             id="submenu-creators"
             role="menubar"
-            aria-hidden={menuIndex !== 0}
+            inert={menuIndex !== 0}
             data-value={menuIndex === 0}
             className="custom-width-title-creators flex w-full justify-between gap-5 data-[value=false]:hidden"
           >
@@ -52,7 +52,7 @@ export const SubMenu = ({ hoverIndicator, menuIndex }: SubMenuProps) => {
           <ul
             id="submenu-features"
             role="menubar"
-            aria-hidden={menuIndex !== 1}
+            inert={menuIndex !== 1}
             data-value={menuIndex === 1}
             className="custom-width-title-features flex w-full justify-between gap-5 data-[value=false]:hidden"
           >
@@ -68,7 +68,7 @@ export const SubMenu = ({ hoverIndicator, menuIndex }: SubMenuProps) => {
           <ul
             id="submenu-prices"
             role="menubar"
-            aria-hidden={menuIndex !== 2}
+            inert={menuIndex !== 2}
             data-value={menuIndex === 2}
             className="flex w-full justify-between gap-5 data-[value=false]:hidden"
           >
@@ -84,7 +84,7 @@ export const SubMenu = ({ hoverIndicator, menuIndex }: SubMenuProps) => {
           <ul
             id="submenu-resources"
             role="menubar"
-            aria-hidden={menuIndex !== 3}
+            inert={menuIndex !== 3}
             data-value={menuIndex === 3}
             className="custom-width-title-resources flex w-full justify-between gap-5 data-[value=false]:hidden"
           >

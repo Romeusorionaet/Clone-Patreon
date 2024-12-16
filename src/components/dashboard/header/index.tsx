@@ -42,6 +42,7 @@ export function Header() {
                 <li
                   key={item}
                   onMouseEnter={() => handleMouseEnter(index)}
+                  onClick={() => handleMouseEnter(index)}
                   onKeyDown={(event) => {
                     if (event.key === 'Enter') {
                       handleMouseEnter(index)
