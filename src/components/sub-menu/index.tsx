@@ -7,32 +7,46 @@ import { resourcesMenu } from '@/constants/sub-menu-list/resources-menu'
 import '@/assets/styles/utilities/custom-width-title.css'
 
 export interface SubMenuProps {
-  hoverIndicator: { visible: boolean }
+  eventIndicator: { visible: boolean }
   menuIndex: number | null
 }
 
-export const SubMenu = ({ hoverIndicator, menuIndex }: SubMenuProps) => {
+export const SubMenu = ({ eventIndicator, menuIndex }: SubMenuProps) => {
   const submenuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    if (hoverIndicator.visible && submenuRef.current) {
-      const firstItem = submenuRef.current.querySelector<HTMLAnchorElement>('a')
-      firstItem?.focus()
+    const handleKeydown = (e: KeyboardEvent) => {
+      if (eventIndicator.visible && submenuRef.current) {
+        const activeSubmenu =
+          submenuRef.current.querySelector<HTMLUListElement>(
+            `ul[data-value="true"]`,
+          )
+        const firstItem = activeSubmenu?.querySelector<HTMLAnchorElement>('a')
+
+        if (e.key === 'Enter' && firstItem) {
+          firstItem.focus()
+        }
+      }
     }
-  }, [hoverIndicator.visible])
+
+    window.addEventListener('keydown', handleKeydown)
+
+    return () => {
+      window.removeEventListener('keydown', handleKeydown)
+    }
+  }, [eventIndicator.visible, menuIndex])
 
   return (
     <div
-      ref={submenuRef}
-      inert={!hoverIndicator.visible}
-      data-value={hoverIndicator.visible}
+      inert={!eventIndicator.visible}
+      data-value={eventIndicator.visible}
       className="w-full -translate-y-96 bg-white pt-custom_2 transition-all duration-500 ease-out data-[value=true]:translate-y-0 data-[value=false]:opacity-20"
     >
       <div
-        data-value={hoverIndicator.visible}
+        data-value={eventIndicator.visible}
         className="hidden w-full items-end px-5 pb-6 data-[value=true]:flex lg:px-7 xl:px-12 xl:pb-10"
       >
-        <nav className="w-full">
+        <nav ref={submenuRef} className="w-full">
           <ul
             id="submenu-creators"
             role="menubar"

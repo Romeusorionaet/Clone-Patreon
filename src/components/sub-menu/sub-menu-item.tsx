@@ -9,7 +9,7 @@ export const SubMenuItem = ({ title, items }: Props) => (
   <li role="menuitem" className="w-full">
     <Link href="#" className="group inline-block text-custom_2 font-medium">
       {title}
-      <span className="ml-1.5 inline-block whitespace-nowrap text-custom_base_text duration-300 after:content-['->'] group-hover:translate-x-1" />
+      <span className="ml-1.5 inline-block whitespace-nowrap duration-300 after:content-['->'] group-hover:translate-x-1 group-focus:translate-x-1" />
     </Link>
 
     <ul
