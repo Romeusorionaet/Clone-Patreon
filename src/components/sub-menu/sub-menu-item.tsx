@@ -20,7 +20,7 @@ export const SubMenuItem = ({ title, items }: Props) => (
         <li
           key={index}
           role="menuitem"
-          className="text-custom_1 opacity-50 duration-300 hover:opacity-100"
+          className="text-custom_1 opacity-50 duration-300 focus-within:opacity-100 hover:opacity-100"
         >
           <Link href="#">{item}</Link>
         </li>

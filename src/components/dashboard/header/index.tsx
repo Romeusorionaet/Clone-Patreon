@@ -18,7 +18,7 @@ export function Header() {
     <header
       onMouseLeave={handleMouseLeave}
       data-value={eventIndicator.visible}
-      className="fixed left-0 top-0 z-10 w-screen data-[value=true]:text-black"
+      className="fixed left-0 top-0 z-20 w-screen data-[value=true]:text-black"
     >
       <div className="relative flex w-full items-center justify-between gap-2 p-custom_container_header max-md:flex-wrap">
         <div className="absolute left-0 top-0 flex w-full items-end max-md:hidden">

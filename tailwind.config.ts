@@ -47,6 +47,11 @@ export default {
         34: '134px',
       },
 
+      height: {
+        custom_1: 'clamp(34rem, 68vw, 68rem)',
+        custom_2: 'clamp(34rem, 59vw, 60rem)',
+      },
+
       screens: {
         md_custom_1: '832px',
         md_middle: '850px',
