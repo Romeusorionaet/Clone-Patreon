@@ -74,18 +74,19 @@ export function AnimatedCarouselTopHome({ content }: Props) {
             <div className="relative h-full w-1/2">
               {isLeft && (
                 <>
-                  <div
+                  <canvas
                     className="absolute left-0 top-0 h-full w-full"
+                    id="myCanvas"
                     style={{
                       backgroundImage: `url(${prevImage})`,
                       backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                      clipPath: `circle(40px at ${mousePosition.x}px ${mousePosition.y}px)`,
+                      backgroundPosition: 'left',
+                      clipPath: `circle(80px at ${mousePosition.x}px ${mousePosition.y}px)`,
                     }}
                   />
 
                   <div
-                    className="absolute h-20 w-20"
+                    className="absolute"
                     style={{
                       left: `${mousePosition.x}px`,
                       top: `${mousePosition.y}px`,
@@ -109,12 +110,12 @@ export function AnimatedCarouselTopHome({ content }: Props) {
                     style={{
                       backgroundImage: `url(${nextImage})`,
                       backgroundSize: 'cover',
-                      backgroundPosition: 'center',
-                      clipPath: `circle(40px at ${mousePosition.x - window.innerWidth / 2}px ${mousePosition.y}px)`,
+                      backgroundPosition: 'right',
+                      clipPath: `circle(80px at ${mousePosition.x - window.innerWidth / 2}px ${mousePosition.y}px)`,
                     }}
                   />
                   <div
-                    className="absolute h-20 w-20"
+                    className="absolute"
                     style={{
                       left: `${mousePosition.x - window.innerWidth / 2}px`,
                       top: `${mousePosition.y}px`,
