@@ -24,7 +24,7 @@ export default {
         custom_1: 'clamp(0.65rem, 0.75vw, 0.90rem)',
         custom_2: 'clamp(0.80rem, 1.1vw, 1.2rem)',
         custom_3: 'clamp(6rem, 12vw, 14rem)',
-        custom_4: 'clamp(0.80rem, 1.4vw, 1.9rem)',
+        custom_4: 'clamp(0.75rem, 1.2vw, 1.6rem)',
       },
 
       padding: {
@@ -45,6 +45,7 @@ export default {
       margin: {
         custom_1: 'clamp(1rem, 1.9vw, 2.5rem)',
         custom_2: 'clamp(10rem, 19.5vw, 24rem)',
+        custom_3: 'clamp(5rem, 10vw, 14rem)',
       },
 
       width: {
