@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../assets/styles/base/globals.css'
-import { Header } from '@/components/dashboard/header'
+import { Header } from '@/components/header'
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  weight: ['300', '400', '900'],
+  weight: ['100', '200', '300', '400', '500', '900'],
 })
 
 export const metadata: Metadata = {

@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'wallpapercave.com',
+        hostname: 'c14.patreon.com',
       },
     ],
   },

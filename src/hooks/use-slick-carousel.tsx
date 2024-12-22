@@ -2,7 +2,7 @@ export function useSlickCarousel() {
   const carouselResponsive = {
     fade: true,
     arrows: false,
-    autoplay: true,
+    // autoplay: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 1,
