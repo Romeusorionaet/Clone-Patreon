@@ -40,14 +40,12 @@ export function AnimatedCarouselTopHome() {
         <Slider7 currentSlider={currentSlider} />
       </Slider>
 
-      <div className="absolute top-0 flex h-full w-full">
-        <div className="flex w-1/2 items-start pl-10 pt-32 xl:pt-56">
-          <ArrowControlLeft onClick={() => slider.current?.slickPrev()} />
-        </div>
+      <div className="absolute left-4 top-72 md:top-32 xl:top-56">
+        <ArrowControlLeft onClick={() => slider.current?.slickPrev()} />
+      </div>
 
-        <div className="flex w-1/2 items-start justify-end pr-10 pt-32 xl:pt-56">
-          <ArrowControlRight onClick={() => slider.current?.slickNext()} />
-        </div>
+      <div className="absolute right-4 top-72 md:top-32 xl:top-56">
+        <ArrowControlRight onClick={() => slider.current?.slickNext()} />
       </div>
     </div>
   )

@@ -7,7 +7,7 @@ interface Props {
 export function ArrowControlLeft({ onClick }: Props) {
   return (
     <button onClick={onClick} className="hover:-translate-x-1">
-      <ChevronLeft size={40} className="rounded-full text-white" />
+      <ChevronLeft className="h-8 w-8 rounded-full text-white md:h-10 md:w-10" />
     </button>
   )
 }
@@ -15,7 +15,7 @@ export function ArrowControlLeft({ onClick }: Props) {
 export function ArrowControlRight({ onClick }: Props) {
   return (
     <button onClick={onClick} className="hover:translate-x-1">
-      <ChevronRight size={40} className="rounded-full text-white" />
+      <ChevronRight className="h-8 w-8 rounded-full text-white md:h-10 md:w-10" />
     </button>
   )
 }

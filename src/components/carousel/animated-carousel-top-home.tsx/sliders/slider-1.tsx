@@ -16,9 +16,12 @@ export function Slider1({ currentSlider }: Props) {
       />
 
       <div className="flex h-full flex-col items-center justify-end px-6 pb-6 xl:px-10">
-        <div className="-mb-8 flex w-full justify-end pr-custom_3 lg:-mb-16">
+        <div className="flex w-full justify-end overflow-hidden max-md:mb-20 max-md:font-medium md:-mb-8 md:pr-custom_3 lg:-mb-16">
           <div className="w-60 xl:w-80">
-            <p className="text-custom_4 leading-snug">
+            <p
+              data-value={currentSlider === 0}
+              className="-translate-y-28 text-custom_4 leading-snug duration-500 ease-in-out data-[value=true]:translate-y-0"
+            >
               Como os criadores estão{' '}
               <span className="lg:whitespace-nowrap">
                 energizando suas comunidades e o
@@ -28,7 +31,7 @@ export function Slider1({ currentSlider }: Props) {
           </div>
         </div>
 
-        <h1 className="inline-block w-full text-custom_3 font-extralight leading-none tracking-tighter">
+        <h1 className="inline-block text-6xl font-extralight leading-none tracking-tighter md:w-full md:text-custom_3">
           <span className="inline-block overflow-hidden">
             <span
               data-value={currentSlider === 0}

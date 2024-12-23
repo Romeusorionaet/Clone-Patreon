@@ -19,9 +19,12 @@ export function Slider2({ currentSlider }: Props) {
       <div className="flex h-full flex-col items-center justify-end px-6 pb-6 xl:px-10">
         <Link
           href="#"
-          className="group z-10 -mb-custom_2 flex w-full justify-end"
+          className="group mb-6 flex w-full overflow-hidden md:-mb-custom_2 md:justify-end"
         >
-          <div className="flex items-center justify-between gap-3">
+          <div
+            data-value={currentSlider === 1}
+            className="flex -translate-y-28 items-center justify-between gap-3 duration-1000 ease-in-out data-[value=true]:translate-y-0"
+          >
             <div className="h-custom_4 w-custom_2 rounded-full bg-blue-500 hover:bg-black">
               <Image
                 width={200}
@@ -32,15 +35,15 @@ export function Slider2({ currentSlider }: Props) {
               />
             </div>
 
-            <p className="text-custom_4 leading-snug">
-              Jade Novah is fusing her loves of <br /> music, writing, and
-              comedy
+            <p className="text-custom_4 leading-snug max-md:font-medium">
+              Jade Novah is fusing her loves of <br />
+              music, writing, and comedy
               <span className="ml-1.5 inline-block whitespace-nowrap duration-300 after:content-['->'] group-hover:translate-x-1 group-focus:translate-x-1" />
             </p>
           </div>
         </Link>
 
-        <h1 className="inline-flex w-full flex-col text-custom_3 font-extralight leading-none tracking-tighter">
+        <h1 className="inline-flex w-full flex-col text-6xl font-extralight leading-none tracking-tighter md:text-custom_3">
           <span className="inline-block overflow-hidden py-3 xl:py-4">
             <span
               data-value={currentSlider === 1}

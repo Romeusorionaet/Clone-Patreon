@@ -19,9 +19,12 @@ export function Slider4({ currentSlider }: Props) {
       <div className="flex h-full flex-col items-center justify-end px-6 pb-6 xl:px-10">
         <Link
           href="#"
-          className="group z-10 -mb-custom_3 flex w-full justify-end"
+          className="group z-10 mb-8 flex w-full overflow-hidden md:-mb-custom_3 md:justify-end"
         >
-          <div className="flex items-center justify-between gap-3">
+          <div
+            data-value={currentSlider === 3}
+            className="flex -translate-y-28 items-center justify-between gap-3 duration-1000 ease-in-out data-[value=true]:translate-y-0"
+          >
             <div className="h-custom_4 w-custom_2 rounded-full bg-blue-500 hover:bg-black">
               <Image
                 width={200}
@@ -32,7 +35,7 @@ export function Slider4({ currentSlider }: Props) {
               />
             </div>
 
-            <p className="text-custom_4 leading-snug">
+            <p className="text-custom_4 leading-snug max-md:font-medium">
               Elliott Wilson is building <br /> community around hip-hop <br />{' '}
               journalism
               <span className="ml-1.5 inline-block whitespace-nowrap duration-300 after:content-['->'] group-hover:translate-x-1 group-focus:translate-x-1" />
@@ -40,7 +43,7 @@ export function Slider4({ currentSlider }: Props) {
           </div>
         </Link>
 
-        <h1 className="inline-block w-full text-custom_3 font-extralight leading-none tracking-tighter">
+        <h1 className="inline-block w-full text-6xl font-extralight leading-none tracking-tighter md:text-custom_3">
           <span className="inline-block overflow-hidden">
             <span
               data-value={currentSlider === 3}

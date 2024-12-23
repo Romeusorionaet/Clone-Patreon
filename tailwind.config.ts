@@ -23,8 +23,8 @@ export default {
         custom_patreon: 'clamp(0.90rem, 1.4vw, 1.9rem)',
         custom_1: 'clamp(0.65rem, 0.75vw, 0.90rem)',
         custom_2: 'clamp(0.80rem, 1.1vw, 1.2rem)',
-        custom_3: 'clamp(6rem, 12vw, 14rem)',
-        custom_4: 'clamp(0.75rem, 1.2vw, 1.6rem)',
+        custom_3: 'clamp(5rem, 12vw, 14rem)',
+        custom_4: 'clamp(0.80rem, 1.2vw, 1.6rem)',
       },
 
       padding: {
@@ -55,7 +55,7 @@ export default {
       },
 
       height: {
-        custom_1: 'clamp(36rem, 69vw, 74rem)',
+        custom_1: 'clamp(46rem, 69vw, 74rem)',
         custom_2: 'clamp(34rem, 59vw, 60rem)',
         custom_3: 'clamp(3rem, 5vw, 6rem)',
         custom_4: 'clamp(3.5rem, 5vw, 6rem)',

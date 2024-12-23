@@ -22,9 +22,12 @@ export function Slider3({ currentSlider }: Props) {
       <div className="flex h-full flex-col items-center justify-end px-6 pb-6 xl:px-10">
         <Link
           href="#"
-          className="group z-10 -mb-custom_3 flex w-full justify-end"
+          className="group z-10 mb-6 flex w-full overflow-hidden md:-mb-custom_3 md:justify-end"
         >
-          <div className="flex items-center justify-between gap-3">
+          <div
+            data-value={currentSlider === 2}
+            className="flex -translate-y-28 items-center justify-between gap-3 duration-1000 ease-in-out data-[value=true]:translate-y-0"
+          >
             <div className="h-custom_4 w-custom_2 rounded-full bg-blue-500 hover:bg-black">
               <Image
                 width={200}
@@ -35,15 +38,15 @@ export function Slider3({ currentSlider }: Props) {
               />
             </div>
 
-            <p className="text-custom_4 leading-snug">
-              Jade Novah is fusing her loves of <br /> music, writing, and
-              comedy
+            <p className="text-custom_4 leading-snug max-md:font-medium">
+              RossDraws is creating, sharing, and <br /> teaching the art of
+              worldbuilding
               <span className="ml-1.5 inline-block whitespace-nowrap duration-300 after:content-['->'] group-hover:translate-x-1 group-focus:translate-x-1" />
             </p>
           </div>
         </Link>
 
-        <h1 className="inline-block w-full text-custom_3 font-extralight leading-none tracking-tighter">
+        <h1 className="inline-block w-full text-6xl font-extralight leading-none tracking-tighter md:text-custom_3">
           <span className="inline-block overflow-hidden py-2 xl:py-4">
             <span
               data-value={currentSlider === 2}
