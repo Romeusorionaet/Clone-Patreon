@@ -2,7 +2,10 @@ import { ArrowDown } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export function Slider4() {
+interface Props {
+  currentSlider?: number
+}
+export function Slider4({ currentSlider }: Props) {
   return (
     <div className="h-custom_1 w-full">
       <Image
@@ -38,15 +41,25 @@ export function Slider4() {
         </Link>
 
         <h1 className="inline-block w-full text-custom_3 font-extralight leading-none tracking-tighter">
-          <span>De você </span>
-          <div className="flex items-end justify-between">
-            <div>
+          <span className="inline-block overflow-hidden">
+            <span
+              data-value={currentSlider === 3}
+              className="inline-block -translate-y-32 duration-300 ease-in-out data-[value=true]:translate-y-0 xl:-translate-y-64"
+            >
+              De você
+            </span>
+          </span>
+          <span className="flex items-end justify-between overflow-hidden">
+            <span>
               <ArrowDown className="h-custom_3 w-custom_1" />
-            </div>
-            <span className="text-end">
+            </span>
+            <span
+              data-value={currentSlider === 3}
+              className="inline-block -translate-y-60 py-2 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-132 xl:py-4"
+            >
               para sua <br /> tripulação
             </span>
-          </div>
+          </span>
         </h1>
       </div>
     </div>

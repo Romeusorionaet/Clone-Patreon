@@ -2,7 +2,10 @@ import { ArrowDown } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export function Slider3() {
+interface Props {
+  currentSlider?: number
+}
+export function Slider3({ currentSlider }: Props) {
   return (
     <div className="h-custom_1 w-full">
       <video
@@ -41,13 +44,25 @@ export function Slider3() {
         </Link>
 
         <h1 className="inline-block w-full text-custom_3 font-extralight leading-none tracking-tighter">
-          <span>Faça isso </span>
-          <div className="flex items-end justify-between">
-            <div>
+          <span className="inline-block overflow-hidden py-2 xl:py-4">
+            <span
+              data-value={currentSlider === 2}
+              className="inline-block -translate-y-32 duration-300 ease-in-out data-[value=true]:translate-y-0 xl:-translate-y-64"
+            >
+              Faça isso
+            </span>
+          </span>
+          <span className="flex items-end justify-between overflow-hidden">
+            <span>
               <ArrowDown className="h-custom_3 w-custom_1" />
-            </div>
-            <span className="text-end">fazendo arte</span>
-          </div>
+            </span>
+            <span
+              data-value={currentSlider === 2}
+              className="inline-block -translate-y-32 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-64"
+            >
+              fazendo arte
+            </span>
+          </span>
         </h1>
       </div>
     </div>

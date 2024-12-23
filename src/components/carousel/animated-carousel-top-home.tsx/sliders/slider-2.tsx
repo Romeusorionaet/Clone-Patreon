@@ -2,7 +2,10 @@ import { ArrowDown } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export function Slider2() {
+interface Props {
+  currentSlider?: number
+}
+export function Slider2({ currentSlider }: Props) {
   return (
     <div className="h-custom_1 w-full">
       <Image
@@ -38,16 +41,25 @@ export function Slider2() {
         </Link>
 
         <h1 className="inline-flex w-full flex-col text-custom_3 font-extralight leading-none tracking-tighter">
-          Seu mais
-          <span>selvagem</span>
-          <div className="flex items-end justify-between">
-            <div>
+          <span className="inline-block overflow-hidden py-3 xl:py-4">
+            <span
+              data-value={currentSlider === 1}
+              className="inline-block -translate-y-64 duration-300 ease-in-out data-[value=true]:translate-y-0 xl:-translate-y-132"
+            >
+              Seu mais <br /> selvagem
+            </span>
+          </span>
+          <span className="flex items-end justify-between overflow-hidden">
+            <span>
               <ArrowDown className="h-custom_3 w-custom_1" />
-            </div>
-            <span className="text-end">
+            </span>
+            <span
+              data-value={currentSlider === 1}
+              className="inline-block -translate-y-64 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-132"
+            >
               realidade <br /> criativa
             </span>
-          </div>
+          </span>
         </h1>
       </div>
     </div>

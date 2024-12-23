@@ -66,6 +66,10 @@ export default {
         md_middle: '850px',
       },
 
+      translate: {
+        '132': '32rem',
+      },
+
       animation: {
         'rise-from-bottom': 'riseFromBottom 0.4s ease-out forwards',
       },
