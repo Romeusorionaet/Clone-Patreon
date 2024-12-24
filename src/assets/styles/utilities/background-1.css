@@ -1,0 +1,28 @@
+.background-1 {
+    background-color: rgb(149, 173, 203);
+    background-image: 
+        radial-gradient(83% 108% at 28% 28%, 
+            rgba(204, 228, 255, 0.3) -10%, 
+            rgba(204, 228, 255, 0.1) 40%, 
+            rgba(204, 228, 255, 0) 60%), 
+        radial-gradient(99% 67% at -22% 50%, 
+            rgba(123, 146, 176, 0.8) 0%, 
+            rgba(123, 146, 176, 0) 80%), 
+        radial-gradient(166% 166% at 193% 195%, 
+            rgb(123, 146, 176) 0%, 
+            rgb(123, 146, 176) 70%, 
+            rgba(123, 146, 176, 0) 95%), 
+        linear-gradient(139deg, 
+            rgba(204, 228, 255, 0) 0%, 
+            rgba(204, 228, 255, 0) 70%, 
+            rgba(204, 228, 255, 0.6) 110%), 
+        radial-gradient(46% 54% at 53% -8%, 
+            rgb(176, 200, 231) 0%, 
+            rgba(176, 200, 231, 0) 100%), 
+        radial-gradient(25% 37% at 95% 2%, 
+            rgb(176, 200, 231) 0%, 
+            rgba(176, 200, 231, 0) 90%);
+    transition: opacity 700ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+

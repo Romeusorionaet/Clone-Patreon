@@ -14,6 +14,12 @@ export default {
         },
       },
 
+      colors: {
+        c1: '#000',
+        c2: '#fff',
+        c3: '#4B2C20',
+      },
+
       fontFamily: {
         inter: 'var(--font-inter)',
       },
@@ -25,6 +31,7 @@ export default {
         custom_2: 'clamp(0.80rem, 1.1vw, 1.2rem)',
         custom_3: 'clamp(5rem, 12vw, 14rem)',
         custom_4: 'clamp(0.80rem, 1.2vw, 1.6rem)',
+        custom_5: 'clamp(3rem, 9vw, 10rem)',
       },
 
       padding: {
@@ -50,13 +57,15 @@ export default {
 
       width: {
         34: '134px',
+        129: '29rem',
         custom_1: 'clamp(3rem, 5vw, 6rem)',
         custom_2: 'clamp(3.5rem, 5vw, 6rem)',
       },
 
       height: {
+        150: '115vh',
         custom_1: 'clamp(46rem, 69vw, 74rem)',
-        custom_2: 'clamp(34rem, 59vw, 60rem)',
+        custom_2: 'clamp(40rem, 66vw, 70rem)',
         custom_3: 'clamp(3rem, 5vw, 6rem)',
         custom_4: 'clamp(3.5rem, 5vw, 6rem)',
       },
