@@ -1,10 +1,5 @@
 'use client'
 
-import { useSlickCarousel } from '@/hooks/use-slick-carousel'
-import '@/assets/styles/slide-slick/slick.css'
-import React, { useRef, useState } from 'react'
-import Slider from 'react-slick'
-import { ArrowControlLeft, ArrowControlRight } from '../arrows-carousel'
 import { Slider1 } from '@/components/carousel/animated-carousel-top-home.tsx/sliders/slider-1'
 import { Slider2 } from '@/components/carousel/animated-carousel-top-home.tsx/sliders/slider-2'
 import { Slider3 } from '@/components/carousel/animated-carousel-top-home.tsx/sliders/slider-3'
@@ -12,6 +7,11 @@ import { Slider4 } from '@/components/carousel/animated-carousel-top-home.tsx/sl
 import { Slider5 } from '@/components/carousel/animated-carousel-top-home.tsx/sliders/slider-5'
 import { Slider6 } from '@/components/carousel/animated-carousel-top-home.tsx/sliders/slider-6'
 import { Slider7 } from '@/components/carousel/animated-carousel-top-home.tsx/sliders/slider-7'
+import { ArrowControlLeft, ArrowControlRight } from '../arrows-carousel'
+import { useSlickCarousel } from '@/hooks/use-slick-carousel'
+import React, { useRef, useState } from 'react'
+import '@/assets/styles/slide-slick/slick.css'
+import Slider from 'react-slick'
 
 export interface CustomSlider extends Slider {
   slickPrev: () => void
@@ -24,7 +24,7 @@ export function AnimatedCarouselTopHome() {
   const [currentSlider, setCurrentSlider] = useState<number>(0)
 
   return (
-    <div className="relative">
+    <section className="relative">
       <Slider
         ref={slider}
         {...carouselResponsive}
@@ -47,6 +47,6 @@ export function AnimatedCarouselTopHome() {
       <div className="absolute right-4 top-72 md:top-32 xl:top-56">
         <ArrowControlRight onClick={() => slider.current?.slickNext()} />
       </div>
-    </div>
+    </section>
   )
 }

@@ -1,8 +1,8 @@
 'use client'
 
+import '@/assets/styles/utilities/input-header-container.css'
 import { Search, X } from 'lucide-react'
 import { useState } from 'react'
-import '@/assets/styles/utilities/input-header-container.css'
 
 export function InputHeader({
   eventIndicatorVisible,

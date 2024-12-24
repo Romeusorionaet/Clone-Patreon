@@ -55,7 +55,7 @@ export function Header() {
                       <span
                         data-content={item}
                         data-value={isHovered}
-                        className={`bg-rise-fade-content before:content-[attr(data-content)] group-hover:animate-rise-from-bottom data-[value=true]:text-white`}
+                        className="bg-rise-fade-content before:content-[attr(data-content)] group-hover:animate-rise-from-bottom data-[value=true]:text-white"
                       >
                         {item}
                       </span>

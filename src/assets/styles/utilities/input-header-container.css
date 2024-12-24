@@ -3,7 +3,7 @@
 @layer utilities {
    .input-header-container {
      @apply flex max-w-[30rem] items-center gap-3 rounded-full
-     border border-white p-2 pl-3 duration-300 z-20
+     border border-white p-1 pl-3 duration-300 z-20
      focus-within:rounded-full 
      max-sm:focus-within:left-0 max-sm:focus-within:right-0 
      max-md:w-full max-md:focus-within:bg-white max-md:focus-within:p-6 max-md:mx-auto max-md:focus-within:static

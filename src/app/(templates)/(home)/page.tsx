@@ -2,8 +2,8 @@ import { AnimatedCarouselTopHome } from '@/components/carousel/animated-carousel
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <AnimatedCarouselTopHome />
-    </div>
+    </main>
   )
 }

@@ -28,7 +28,7 @@ export default {
       },
 
       padding: {
-        custom_container_header: 'clamp(1.25rem, 2.5vw, 3rem)',
+        custom_container_header: 'clamp(1rem, 2.5vw, 3rem)',
         custom_1: 'clamp(0.60rem, 0.95vw, 1.4rem)',
         custom_2: 'clamp(5rem, 8vw, 12rem)',
         custom_3: 'clamp(4.5rem, 7.5vw, 12rem)',

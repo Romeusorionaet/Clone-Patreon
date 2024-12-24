@@ -1,4 +1,4 @@
-import { ArrowDown } from 'lucide-react'
+import { ArrowMoveDown } from '@/components/animated-components/arrow-move-down'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -53,9 +53,12 @@ export function Slider4({ currentSlider }: Props) {
             </span>
           </span>
           <span className="flex items-end justify-between overflow-hidden">
-            <span>
-              <ArrowDown className="h-custom_3 w-custom_1" />
-            </span>
+            <Link
+              href="#"
+              className="-ml-16 inline-block w-40 xl:-ml-32 xl:w-80"
+            >
+              <ArrowMoveDown />
+            </Link>
             <span
               data-value={currentSlider === 3}
               className="inline-block -translate-y-60 py-2 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-132 xl:py-4"

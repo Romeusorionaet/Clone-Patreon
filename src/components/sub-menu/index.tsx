@@ -1,10 +1,10 @@
-import { useEffect, useRef } from 'react'
-import { SubMenuItem } from '@/components/sub-menu/sub-menu-item'
+import { resourcesMenu } from '@/constants/sub-menu-list/resources-menu'
 import { creatorsMenu } from '@/constants/sub-menu-list/creators-menu'
 import { featuresMenu } from '@/constants/sub-menu-list/features-menu'
 import { pricesMenu } from '@/constants/sub-menu-list/prices-menu'
-import { resourcesMenu } from '@/constants/sub-menu-list/resources-menu'
-import '@/assets/styles/utilities/custom-width-title.css'
+import { SubMenuItem } from '@/components/sub-menu/sub-menu-item'
+import '@/assets/styles/utilities/custom-width-titles.css'
+import { useEffect, useRef } from 'react'
 
 export interface SubMenuProps {
   eventIndicator: { visible: boolean }
