@@ -1,6 +1,4 @@
-import { ArrowMoveDown } from '@/components/animated-components/arrow-move-down'
 import Image from 'next/image'
-import Link from 'next/link'
 
 interface Props {
   currentSlider?: number
@@ -41,13 +39,7 @@ export function Slider1({ currentSlider }: Props) {
               Para seus
             </span>
           </span>
-          <span className="flex items-end justify-between overflow-hidden">
-            <Link
-              href="#"
-              className="-ml-16 inline-block w-40 xl:-ml-32 xl:w-80"
-            >
-              <ArrowMoveDown />
-            </Link>
+          <span className="flex items-end justify-end overflow-hidden">
             <span
               data-value={currentSlider === 0}
               className="inline-block -translate-y-28 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-52"

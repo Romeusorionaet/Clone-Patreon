@@ -1,4 +1,3 @@
-import { ArrowMoveDown } from '@/components/animated-components/arrow-move-down'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -52,18 +51,12 @@ export function Slider6({ currentSlider }: Props) {
               Criador
             </span>
           </span>
-          <span className="flex items-end justify-between overflow-hidden">
-            <Link
-              href="#"
-              className="-ml-16 inline-block w-40 xl:-ml-32 xl:w-80"
-            >
-              <ArrowMoveDown />
-            </Link>
+          <span className="flex items-end justify-end overflow-hidden">
             <span
               data-value={currentSlider === 5}
               className="inline-block -translate-y-56 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-132"
             >
-              agora é uma <br /> carreira
+              agora é <br className="md:hidden" /> uma <br /> carreira
             </span>
           </span>
         </h1>

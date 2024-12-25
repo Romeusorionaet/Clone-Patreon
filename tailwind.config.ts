@@ -64,7 +64,7 @@ export default {
 
       height: {
         150: '115vh',
-        custom_1: 'clamp(46rem, 69vw, 74rem)',
+        custom_1: 'clamp(47rem, 69vw, 74rem)',
         custom_2: 'clamp(40rem, 66vw, 70rem)',
         custom_3: 'clamp(3rem, 5vw, 6rem)',
         custom_4: 'clamp(3.5rem, 5vw, 6rem)',
