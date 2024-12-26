@@ -15,7 +15,8 @@
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-slick": "^0.30.3"
+    "react-slick": "^0.30.3",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",

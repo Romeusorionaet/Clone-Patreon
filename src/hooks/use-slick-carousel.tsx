@@ -14,12 +14,11 @@ export function useSlickCarousel() {
   const carouselGalleryScreen = {
     arrows: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 9000,
-    autoplaySpeed: 2000,
-    cssEase: 'linear',
+    speed: 30000,
+    pauseOnHover: true,
   }
 
   return { carouselResponsive, carouselGalleryScreen }

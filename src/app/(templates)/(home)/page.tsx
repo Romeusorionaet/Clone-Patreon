@@ -1,3 +1,5 @@
+'use client'
+
 import { CarouselImagesSecondSection } from '@/components/carousel/carousel-images-second-section'
 import { AnimatedCarouselTopHome } from '@/components/carousel/animated-carousel-top-home.tsx'
 import '@/assets/styles/utilities/background-1.css'
@@ -8,7 +10,7 @@ export default function Home() {
       <AnimatedCarouselTopHome />
 
       <section className="background-1 relative flex h-150 w-full flex-col items-center justify-center md:h-custom_2">
-        <h2 className="absolute top-0 z-10 flex h-full w-full flex-col justify-between border px-6 pb-64 pt-16 text-custom_5 leading-none text-c3/70 md:pb-6">
+        <h2 className="absolute top-0 z-10 flex h-full w-full flex-col justify-between px-6 pb-64 pt-16 text-custom_5 leading-none text-c3/70 md:pb-6">
           <span>
             Criatividade <br /> alimentado
           </span>
@@ -25,12 +27,10 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="w-full">
+        <div className="z-20 w-full">
           <CarouselImagesSecondSection />
         </div>
       </section>
-
-      <section className="h-custom_2 w-full bg-slate-900"></section>
     </main>
   )
 }

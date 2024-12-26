@@ -1,0 +1,120 @@
+@tailwind utilities;
+
+@layer utilities {
+    /* slide-1 style */
+
+    .wrapper-1 {
+        .image-measurement-1 {
+            img {
+                @apply h-full w-full object-cover
+            }
+            @apply max-md:w-64 max-md:h-80 w-[80%] h-[100%] relative
+        }
+        @media (min-width: 768px) {
+            width: clamp(12rem, 24vw, 25rem);
+            height: clamp(12rem, 26vw, 28rem);
+        }
+    } 
+
+    .wrapper-2 {
+        .image-measurement-2 {
+            img {
+                @apply h-full w-full object-cover
+            }
+            @apply max-md:w-64 max-md:h-96 max-md:mb-20
+        }
+        @media (min-width: 768px) {
+            width: clamp(9rem, 20vw, 20rem);
+            height: clamp(16rem, 30vw, 33rem);
+
+            margin-bottom: clamp(6rem, 7vw, 8rem);
+        }
+    }
+
+    .wrapper-3 {
+        .image-measurement-3 {
+           img {
+               @apply h-full w-full object-cover
+           }
+           @apply max-md:w-64 max-md:h-96 w-[80%] h-[100%] max-md:mt-16
+       }
+       @media (min-width: 768px) {
+            width: clamp(20.5rem, 38vw, 40rem);
+            height: clamp(15.5rem, 32vw, 40rem);
+
+            margin-top: clamp(9rem, 10vw, 10rem);
+       }
+    }
+
+    .wrapper-4 {
+        .image-measurement-4 {
+            img {
+                @apply h-full w-full object-cover 
+            }
+            @apply max-md:w-64 max-md:h-80
+        }
+        @media (min-width: 768px) {
+            width:  clamp(9rem, 21vw, 24rem);
+            height: clamp(11rem, 23vw, 25rem);
+
+            margin-bottom: clamp(11rem, 16vw, 19rem);
+       }
+    }
+
+    /* slide-2 style */
+
+    .wrapper-5 {
+        .image-measurement-5 {
+            img {
+                @apply h-full w-full object-cover
+            }
+            @apply max-md:w-56 max-md:h-32 max-md:mb-20
+        }
+        @media (min-width: 768px) {
+            width: clamp(11rem, 24vw, 28rem);
+            height: clamp(6rem, 18vw, 22rem);
+       }
+    } 
+
+    .wrapper-6 {
+        .image-measurement-6 {
+            img {
+                @apply h-full w-full object-cover
+            }
+            @apply max-md:w-64 max-md:h-80
+        }
+        @media (min-width: 768px) {
+            width: clamp(12rem, 24vw, 25rem);
+            height: clamp(12rem, 26vw, 28rem);
+       }
+    }
+
+    .wrapper-7 {
+        .image-measurement-7 {
+           img {
+               @apply h-full w-full object-cover
+           }
+           @apply max-md:w-64 max-md:h-80 w-[70%] h-[100%] max-md:mb-20
+       }
+       @media (min-width: 768px) {
+        width: clamp(18rem, 38vw, 40rem);
+        height: clamp(16rem, 29vw, 30rem);
+
+        margin-bottom: clamp(0rem, 12vw, 13rem);
+      }
+    }
+
+    
+    @keyframes move-right {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(calc(100% - 80%));
+        }
+      }
+    
+      .animate-move-right {
+        animation: move-right 24s infinite;
+      }
+}
