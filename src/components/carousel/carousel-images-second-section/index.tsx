@@ -18,7 +18,7 @@ export function CarouselImagesSecondSection() {
           delay: 0,
           disableOnInteraction: false,
         }}
-        speed={widthScreen <= 768 ? 10000 : 50000}
+        speed={widthScreen <= 768 ? 10000 : 30000}
         spaceBetween={0}
         slidesPerView={widthScreen <= 768 ? 1.1 : 3}
         loop
@@ -49,7 +49,7 @@ export function CarouselImagesSecondSection() {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="my-auto">
           <div className="wrapper-3">
             <div className="image-measurement-3 animate-move-right">
               <Image

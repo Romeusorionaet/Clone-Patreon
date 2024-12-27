@@ -1,8 +1,6 @@
 @tailwind utilities;
 
 @layer utilities {
-    /* slide-1 style */
-
     .wrapper-1 {
         .image-measurement-1 {
             img {
@@ -41,8 +39,6 @@
        @media (min-width: 768px) {
             width: clamp(20.5rem, 38vw, 40rem);
             height: clamp(15.5rem, 32vw, 40rem);
-
-            margin-top: clamp(9rem, 10vw, 10rem);
        }
     }
 
@@ -60,8 +56,6 @@
             margin-bottom: clamp(11rem, 16vw, 19rem);
        }
     }
-
-    /* slide-2 style */
 
     .wrapper-5 {
         .image-measurement-5 {
