@@ -1,6 +1,7 @@
 import { CarouselImagesSecondSection } from '@/components/carousel/carousel-images-second-section'
 import { AnimatedCarouselTopHome } from '@/components/carousel/animated-carousel-top-home.tsx'
 import '@/assets/styles/utilities/backgrounds-section.css'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
           </span>
         </h2>
 
-        <div className="absolute bottom-16 left-6 z-10 mix-blend-exclusion max-md:w-72">
-          <p className="pointer-events-none font-medium leading-tight tracking-wide md:text-custom_6">
+        <div className="pointer-events-none absolute bottom-16 left-6 z-10 mix-blend-exclusion max-md:w-72">
+          <p className="font-medium leading-tight tracking-wide md:text-custom_6">
             O Patreon é o melhor lugar para criar uma
             <br className="max-md:hidden" /> comunidade com seus maiores fãs,
             compartilhar <br className="max-md:hidden" /> trabalhos exclusivos e
@@ -30,6 +31,15 @@ export default function Home() {
         <div className="w-full">
           <CarouselImagesSecondSection />
         </div>
+      </section>
+
+      <section>
+        <Image
+          width={1000}
+          height={1000}
+          src="https://c14.patreon.com/Patreon_Website_Module3_2_X_72dpi_Kamauu1_c26920eff8.jpg"
+          alt=""
+        />
       </section>
     </main>
   )

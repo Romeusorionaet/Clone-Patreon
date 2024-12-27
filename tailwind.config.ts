@@ -32,6 +32,7 @@ export default {
         custom_4: 'clamp(0.80rem, 1.2vw, 1.6rem)',
         custom_5: 'clamp(3rem, 9vw, 10rem)',
         custom_6: 'clamp(1.4rem, 1.5vw, 1.6rem)',
+        custom_7: 'clamp(0.90rem, 1vw, 1.2rem)',
       },
 
       padding: {

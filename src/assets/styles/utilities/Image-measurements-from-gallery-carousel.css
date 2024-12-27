@@ -9,8 +9,8 @@
             @apply max-md:w-64 max-md:h-80 w-[80%] h-[100%] relative
         }
         @media (min-width: 768px) {
-            width: clamp(12rem, 24vw, 25rem);
-            height: clamp(12rem, 26vw, 28rem);
+            width: clamp(12rem, 28vw, 30rem);
+            height: clamp(12rem, 28vw, 32rem);
         }
     } 
 
@@ -19,13 +19,13 @@
             img {
                 @apply h-full w-full object-cover
             }
-            @apply max-md:w-64 max-md:h-96 max-md:mb-20
+            @apply max-md:w-64 max-md:h-96 max-md:mb-20 relative
         }
         @media (min-width: 768px) {
-            width: clamp(9rem, 20vw, 20rem);
-            height: clamp(16rem, 30vw, 33rem);
+            width: clamp(9rem, 26vw, 26rem);
+            height: clamp(16rem, 35vw, 36rem);
 
-            margin-bottom: clamp(6rem, 7vw, 8rem);
+            margin-bottom: clamp(6rem, 12vw, 13rem);
         }
     }
 
@@ -34,11 +34,11 @@
            img {
                @apply h-full w-full object-cover
            }
-           @apply max-md:w-64 max-md:h-96 w-[80%] h-[100%] max-md:mt-16
+           @apply max-md:w-64 max-md:h-96 w-[80%] h-[100%] max-md:mt-16 relative
        }
        @media (min-width: 768px) {
-            width: clamp(20.5rem, 38vw, 40rem);
-            height: clamp(15.5rem, 32vw, 40rem);
+            width: clamp(15rem, 40vw, 52rem);
+            height: clamp(15.5rem, 35vw, 42rem);
        }
     }
 
@@ -47,11 +47,11 @@
             img {
                 @apply h-full w-full object-cover 
             }
-            @apply max-md:w-64 max-md:h-80
+            @apply max-md:w-64 max-md:h-80 relative
         }
         @media (min-width: 768px) {
-            width:  clamp(9rem, 21vw, 24rem);
-            height: clamp(11rem, 23vw, 25rem);
+            width:  clamp(9rem, 21vw, 28rem);
+            height: clamp(11rem, 23vw, 30rem);
 
             margin-bottom: clamp(11rem, 16vw, 19rem);
        }
@@ -62,7 +62,7 @@
             img {
                 @apply h-full w-full object-cover
             }
-            @apply max-md:w-56 max-md:h-32 max-md:mb-20
+            @apply max-md:w-56 max-md:h-32 max-md:mb-20 relative
         }
         @media (min-width: 768px) {
             width: clamp(11rem, 24vw, 28rem);
@@ -75,11 +75,11 @@
             img {
                 @apply h-full w-full object-cover
             }
-            @apply max-md:w-64 max-md:h-80
+            @apply max-md:w-64 max-md:h-80 relative
         }
         @media (min-width: 768px) {
-            width: clamp(12rem, 24vw, 25rem);
-            height: clamp(12rem, 26vw, 28rem);
+            width: clamp(12rem, 25vw, 30rem);
+            height: clamp(12rem, 25vw, 32rem);
        }
     }
 
@@ -88,13 +88,11 @@
            img {
                @apply h-full w-full object-cover
            }
-           @apply max-md:w-64 max-md:h-80 w-[70%] h-[100%] max-md:mb-20
+           @apply max-md:w-64 max-md:h-80 w-[70%] h-[100%] max-md:mb-20 relative
        }
        @media (min-width: 768px) {
         width: clamp(18rem, 38vw, 40rem);
         height: clamp(16rem, 29vw, 30rem);
-
-        margin-bottom: clamp(0rem, 12vw, 13rem);
       }
     }
 
