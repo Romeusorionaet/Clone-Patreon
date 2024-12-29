@@ -42,14 +42,12 @@ export function AnimatedCarouselTopHome() {
         <Slider7 currentSlider={currentSlider} />
       </Slider>
 
-      <Link
-        href="#"
-        className="absolute bottom-2 inline-block w-40 max-md:-left-12 md:-left-10 xl:w-56"
-      >
+      <Link href="#" className="pointer-events-none absolute bottom-2 block">
         <DotLottieReact
           src="https://lottie.host/4a0da003-d8cb-4a44-98d7-fda166f6d3d8/NBIBD5893o.lottie"
           loop
           autoplay
+          className="pointer-events-auto h-20 w-20 xl:h-40 xl:w-40"
         />
       </Link>
 
