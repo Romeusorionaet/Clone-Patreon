@@ -1,14 +1,14 @@
 import { CarouselImagesSecondSection } from '@/components/carousel/carousel-images-second-section'
 import { AnimatedCarouselTopHome } from '@/components/carousel/animated-carousel-top-home.tsx'
+import { ImageWithScrollEffect } from '@/components/image-with-scroll-effect'
 import '@/assets/styles/utilities/backgrounds-section.css'
-import Image from 'next/image'
 
 export default function Home() {
   return (
     <main>
       <AnimatedCarouselTopHome />
 
-      <section className="background-1 relative flex h-150 w-full flex-col items-center justify-center md_custom_2:h-custom_2">
+      <section className="background-1 relative flex h-150vh w-full flex-col items-center justify-center md_custom_2:h-custom_2">
         <h2 className="pointer-events-none absolute top-0 z-10 flex h-full w-full flex-col justify-between px-6 pb-64 pt-16 text-custom_5 leading-none mix-blend-exclusion md_custom_2:pb-6">
           <span>
             Criatividade <br /> alimentado
@@ -33,14 +33,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <Image
-          width={1000}
-          height={1000}
-          src="https://c14.patreon.com/Patreon_Website_Module3_2_X_72dpi_Kamauu1_c26920eff8.jpg"
-          alt=""
-        />
-      </section>
+      <ImageWithScrollEffect />
+
+      <div className="h-screen w-full" />
     </main>
   )
 }

@@ -4,11 +4,11 @@ import '@/assets/styles/utilities/Image-measurements-from-gallery-carousel.css'
 import { useWidthScreen } from '@/hooks/use-width-screen'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import '@/assets/styles/slide-slick/slick.css'
+import { ArrowRight } from 'lucide-react'
 import { Autoplay } from 'swiper/modules'
 import Image from 'next/image'
-import 'swiper/css/bundle'
-import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import 'swiper/css/bundle'
 
 export function CarouselImagesSecondSection() {
   const { widthScreen } = useWidthScreen()

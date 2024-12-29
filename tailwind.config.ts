@@ -33,6 +33,8 @@ export default {
         custom_5: 'clamp(3rem, 9vw, 10rem)',
         custom_6: 'clamp(1.4rem, 1.5vw, 1.6rem)',
         custom_7: 'clamp(0.90rem, 1vw, 1.2rem)',
+        custom_8: 'clamp(1.3rem, 2.5vw, 2.8rem)',
+        custom_9: 'clamp(1.8rem, 2.8vw, 3rem)',
       },
 
       padding: {
@@ -64,11 +66,14 @@ export default {
       },
 
       height: {
-        150: '115vh',
+        '85': '85vh',
+        '90vh': '90vh',
+        '150vh': '115vh',
         custom_1: 'clamp(47rem, 69vw, 74rem)',
         custom_2: 'clamp(40rem, 66vw, 70rem)',
         custom_3: 'clamp(3rem, 5vw, 6rem)',
         custom_4: 'clamp(3.5rem, 5vw, 6rem)',
+        custom_5: 'clamp(40rem, 65vw, 95rem)',
       },
 
       screens: {
