@@ -54,7 +54,7 @@ export function Slider6({ currentSlider }: Props) {
           <span className="flex items-end justify-end overflow-hidden">
             <span
               data-value={currentSlider === 5}
-              className="inline-block -translate-y-56 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-132"
+              className="inline-block -translate-y-56 text-end duration-500 ease-linear data-[value=true]:translate-y-0 lg:-translate-y-72 xl:-translate-y-132"
             >
               agora é <br className="md:hidden" /> uma <br /> carreira
             </span>

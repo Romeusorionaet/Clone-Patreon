@@ -51,10 +51,10 @@ export function Slider5({ currentSlider }: Props) {
               Sua casa
             </span>
           </span>
-          <span className="flex items-end justify-end overflow-hidden max-md:pb-1.5">
+          <span className="flex items-end justify-end overflow-hidden pb-1.5 md:pb-2.5 xl:pb-5">
             <span
               data-value={currentSlider === 4}
-              className="inline-block -translate-y-32 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-64"
+              className="inline-block -translate-y-44 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-64"
             >
               Suas <br className="md:hidden" /> regras
             </span>

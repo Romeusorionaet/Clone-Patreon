@@ -7,8 +7,8 @@ import { Slider4 } from '@/components/carousel/animated-carousel-top-home.tsx/sl
 import { Slider5 } from '@/components/carousel/animated-carousel-top-home.tsx/sliders/slider-5'
 import { Slider6 } from '@/components/carousel/animated-carousel-top-home.tsx/sliders/slider-6'
 import { Slider7 } from '@/components/carousel/animated-carousel-top-home.tsx/sliders/slider-7'
-import { ArrowMoveDown } from '@/components/animated-components/arrow-move-down'
 import { ArrowControlLeft, ArrowControlRight } from '../arrows-carousel'
+import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import { useSlickCarousel } from '@/hooks/use-slick-carousel'
 import React, { useRef, useState } from 'react'
 import '@/assets/styles/slide-slick/slick.css'
@@ -44,9 +44,13 @@ export function AnimatedCarouselTopHome() {
 
       <Link
         href="#"
-        className="absolute bottom-2 inline-block w-40 max-md:-left-12 md:-left-10 xl:-left-32 xl:w-80"
+        className="absolute bottom-2 inline-block w-40 max-md:-left-12 md:-left-10 xl:w-56"
       >
-        <ArrowMoveDown />
+        <DotLottieReact
+          src="https://lottie.host/4a0da003-d8cb-4a44-98d7-fda166f6d3d8/NBIBD5893o.lottie"
+          loop
+          autoplay
+        />
       </Link>
 
       <div className="absolute left-4 top-72 md:top-32 xl:top-56">

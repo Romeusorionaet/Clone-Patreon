@@ -34,7 +34,7 @@ export function Slider1({ currentSlider }: Props) {
           <span className="inline-block overflow-hidden">
             <span
               data-value={currentSlider === 0}
-              className="inline-block -translate-y-28 duration-300 ease-in-out data-[value=true]:translate-y-0 xl:-translate-y-52"
+              className="inline-block -translate-y-28 duration-300 ease-in-out data-[value=true]:translate-y-0 lg:-translate-y-44 xl:-translate-y-52"
             >
               Para seus
             </span>
@@ -42,7 +42,7 @@ export function Slider1({ currentSlider }: Props) {
           <span className="flex items-end justify-end overflow-hidden">
             <span
               data-value={currentSlider === 0}
-              className="inline-block -translate-y-28 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-52"
+              className="inline-block -translate-y-28 text-end duration-500 ease-linear data-[value=true]:translate-y-0 lg:-translate-y-44 xl:-translate-y-52"
             >
               verdadeiros fãs
             </span>

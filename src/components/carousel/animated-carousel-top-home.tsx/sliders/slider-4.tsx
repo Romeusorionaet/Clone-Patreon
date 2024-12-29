@@ -54,7 +54,7 @@ export function Slider4({ currentSlider }: Props) {
           <span className="flex items-end justify-end overflow-hidden">
             <span
               data-value={currentSlider === 3}
-              className="inline-block -translate-y-60 py-2 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-132 xl:py-4"
+              className="inline-block -translate-y-80 py-2 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-132 xl:py-4"
             >
               para sua <br /> tripulação
             </span>

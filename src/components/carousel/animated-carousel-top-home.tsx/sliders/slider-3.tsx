@@ -49,7 +49,7 @@ export function Slider3({ currentSlider }: Props) {
           <span className="inline-block overflow-hidden py-2 xl:py-4">
             <span
               data-value={currentSlider === 2}
-              className="inline-block -translate-y-32 duration-300 ease-in-out data-[value=true]:translate-y-0 xl:-translate-y-64"
+              className="inline-block -translate-y-32 duration-300 ease-in-out data-[value=true]:translate-y-0 lg:-translate-y-44 xl:-translate-y-64"
             >
               Faça isso
             </span>
@@ -57,7 +57,7 @@ export function Slider3({ currentSlider }: Props) {
           <span className="flex items-end justify-end overflow-hidden">
             <span
               data-value={currentSlider === 2}
-              className="inline-block -translate-y-32 text-end duration-500 ease-linear data-[value=true]:translate-y-0 xl:-translate-y-64"
+              className="inline-block -translate-y-32 text-end duration-500 ease-linear data-[value=true]:translate-y-0 lg:-translate-y-44 xl:-translate-y-64"
             >
               fazendo <br className="md:hidden" /> arte
             </span>
