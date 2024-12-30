@@ -55,13 +55,14 @@ export function ImageWithScrollEffect() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [maxOffset, visibilityRatio, minOffset])
+
   return (
     <section
       ref={sectionRef}
       className="relative flex h-85 items-end overflow-hidden md_custom_2:h-custom_5"
     >
       <div className="flex h-1/2 w-full justify-evenly px-4 leading-none max-md:flex-col md:items-end md:justify-center md:gap-20 md:px-8 md:pb-6 md:leading-tight 2xl:px-16">
-        <p className="inline-block w-11/12 indent-16 text-custom_8 font-light md:indent-20 xl:indent-44 xl:font-normal">
+        <p className="inline-block w-11/12 indent-16 text-custom_8 font-light tracking-tighter md:indent-20 xl:indent-44 xl:font-normal">
           {'"'}O Patreon oferece um espaço para os artistas se
           <br className="max-md:hidden" /> sustentarem conectando-os diretamente
           às suas próprias comunidades.

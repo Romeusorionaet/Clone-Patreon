@@ -33,7 +33,7 @@ export default {
         custom_5: 'clamp(3rem, 9vw, 10rem)',
         custom_6: 'clamp(1.4rem, 1.5vw, 1.6rem)',
         custom_7: 'clamp(0.90rem, 1vw, 1.2rem)',
-        custom_8: 'clamp(1.3rem, 2.5vw, 2.8rem)',
+        custom_8: 'clamp(1.2rem, 2.5vw, 2.8rem)',
         custom_9: 'clamp(1.8rem, 2.8vw, 3rem)',
       },
 

@@ -35,7 +35,7 @@ export default function Home() {
 
       <ImageWithScrollEffect />
 
-      <div className="h-screen w-full" />
+      <div className="background-2 h-screen w-full"></div>
     </main>
   )
 }
