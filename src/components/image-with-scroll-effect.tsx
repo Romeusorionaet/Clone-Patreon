@@ -1,64 +1,24 @@
 'use client'
 
 import { useWidthScreen } from '@/hooks/use-width-screen'
-import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
+import { useResponsiveScrollEffect } from '@/hooks/use-responsive-scroll-effect'
 
 export function ImageWithScrollEffect() {
-  const sectionRef = useRef<HTMLDivElement>(null)
-  const [topValue, setTopValue] = useState(0)
   const { widthScreen } = useWidthScreen()
-  const [visibilityRatio, setVisibilityRatio] = useState(0)
-  const [maxOffset, setMaxOffset] = useState(0)
-  const [minOffset, setMinOffset] = useState(0)
 
-  useEffect(() => {
-    switch (true) {
-      case widthScreen <= 877:
-        setVisibilityRatio(0)
-        setMaxOffset(100)
-        setMinOffset(0)
-        break
-      case widthScreen >= 1280:
-        setVisibilityRatio(-50)
-        setMaxOffset(350)
-        setMinOffset(-100)
-        break
-      default:
-        setVisibilityRatio(-5)
-        setMaxOffset(200)
-        setMinOffset(-2)
-        break
-    }
-  }, [widthScreen])
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const section = sectionRef.current
-      if (!section) return
-
-      const { top: sectionTop, height: sectionHeight } =
-        section.getBoundingClientRect()
-
-      if (sectionTop <= window.innerHeight && sectionTop + sectionHeight >= 0) {
-        const progress =
-          1 -
-          Math.min(
-            Math.max(sectionTop / window.innerHeight, visibilityRatio),
-            1,
-          )
-        const newTop = minOffset - progress * maxOffset
-        setTopValue(newTop)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [maxOffset, visibilityRatio, minOffset])
+  const { areaRef, topValue } = useResponsiveScrollEffect({
+    widthScreen,
+    breakpoints: {
+      small: { maxOffset: 100 },
+      medium: { visibilityRatio: -5, maxOffset: 200 },
+      large: { visibilityRatio: -50, maxOffset: 350, minOffset: -100 },
+    },
+  })
 
   return (
     <section
-      ref={sectionRef}
+      ref={areaRef}
       className="relative flex h-85 items-end overflow-hidden md_custom_2:h-custom_5"
     >
       <div className="flex h-1/2 w-full justify-evenly px-4 leading-none max-md:flex-col md:items-end md:justify-center md:gap-20 md:px-8 md:pb-6 md:leading-tight 2xl:px-16">

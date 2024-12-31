@@ -8,6 +8,11 @@ export default {
   ],
   theme: {
     extend: {
+      inset: {
+        '1/5': '20%',
+        '6/100': '6%',
+      },
+
       variants: {
         extend: {
           content: ['before', 'after'],
@@ -30,11 +35,12 @@ export default {
         custom_2: 'clamp(0.80rem, 1.1vw, 1.2rem)',
         custom_3: 'clamp(5rem, 12vw, 14rem)',
         custom_4: 'clamp(0.80rem, 1.2vw, 1.6rem)',
-        custom_5: 'clamp(3rem, 9vw, 10rem)',
+        custom_5: 'clamp(3rem, 9vw, 9rem)',
         custom_6: 'clamp(1.4rem, 1.5vw, 1.6rem)',
         custom_7: 'clamp(0.90rem, 1vw, 1.2rem)',
         custom_8: 'clamp(1.2rem, 2.5vw, 2.8rem)',
         custom_9: 'clamp(1.8rem, 2.8vw, 3rem)',
+        custom_10: 'clamp(0.90rem, 1vw, 1.4rem)',
       },
 
       padding: {
@@ -56,13 +62,17 @@ export default {
         custom_1: 'clamp(1rem, 1.9vw, 2.5rem)',
         custom_2: 'clamp(10rem, 19.5vw, 24rem)',
         custom_3: 'clamp(5rem, 10vw, 14rem)',
+        '15/100': '15%',
+        '8/100': '8%',
       },
 
       width: {
         34: '134px',
         129: '34rem',
+        '8.5/12': '70%',
         custom_1: 'clamp(3rem, 5vw, 6rem)',
         custom_2: 'clamp(3.5rem, 5vw, 6rem)',
+        custom_3: 'clamp(12rem, 34vw, 40rem)',
       },
 
       height: {
