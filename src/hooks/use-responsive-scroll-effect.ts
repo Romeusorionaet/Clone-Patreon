@@ -23,7 +23,7 @@ export function useResponsiveScrollEffect({
   const [minOffset, setMinOffset] = useState(0)
 
   useEffect(() => {
-    if (widthScreen <= 877) {
+    if (widthScreen <= 768) {
       setVisibilityRatio(breakpoints.small.visibilityRatio ?? 0)
       setMaxOffset(breakpoints.small.maxOffset)
       setMinOffset(breakpoints.small.minOffset ?? 0)

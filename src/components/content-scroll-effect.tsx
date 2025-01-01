@@ -19,7 +19,7 @@ export function ContentScrollEffect() {
   return (
     <div
       ref={areaRef}
-      className="left-1/5 flex flex-col items-start gap-6 transition-all duration-500 max-md:mt-10 md:absolute md:w-1/2"
+      className="left-1/5 flex flex-col items-start gap-6 transition-all duration-500 max-md:mt-10 md:w-1/2 sm_custom_1:absolute"
       style={{ top: `${-topValue}px` }}
     >
       <div className="space-y-4 text-sm font-light leading-tight tracking-tight mix-blend-exclusion md:w-8.5/12 md:text-custom_10">

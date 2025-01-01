@@ -19,7 +19,7 @@ export function VideoScrollEffect() {
     <div className="relative">
       <div
         ref={areaRef}
-        className="right-6/100 w-full transition-all duration-500 max-md:mt-16 md:absolute md:-mt-15/100 md:w-1/4"
+        className="right-6/100 w-full transition-all duration-500 max-md:mt-16 md:-mt-15/100 md:w-1/4 sm_custom_1:absolute"
         style={{ top: `${topValue}px` }}
       >
         <video

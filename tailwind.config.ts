@@ -87,6 +87,7 @@ export default {
       },
 
       screens: {
+        sm_custom_1: '768px',
         md_custom_1: '832px',
         md_custom_2: '877px',
         md_middle: '850px',
