@@ -4,15 +4,15 @@ import { useResponsiveScrollEffect } from '@/hooks/use-responsive-scroll-effect'
 import { useWidthScreen } from '@/hooks/use-width-screen'
 import Link from 'next/link'
 
-export function ContentScrollEffect() {
+export function ContentCreatorsScrollEffect() {
   const { widthScreen } = useWidthScreen()
 
   const { areaRef, topValue } = useResponsiveScrollEffect({
     widthScreen,
     breakpoints: {
-      small: { visibilityRatio: 0, maxOffset: 0, minOffset: 0 },
-      medium: { visibilityRatio: 0, maxOffset: 60, minOffset: 0 },
-      large: { visibilityRatio: 0, maxOffset: 80, minOffset: 0 },
+      small: { maxOffset: 0 },
+      medium: { maxOffset: 60 },
+      large: { maxOffset: 80 },
     },
   })
 

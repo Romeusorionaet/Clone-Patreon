@@ -1,8 +1,10 @@
+import { ContentTransformScrollEffect } from '@/components/scroll-effect/content-transform-scroll-effect'
+import { ContentCreatorsScrollEffect } from '@/components/scroll-effect/content-creatores-scroll-effect'
+import { MembershipPanelScrollEffect } from '@/components/scroll-effect/membership-panel-scroll-effect'
 import { CarouselImagesSecondSection } from '@/components/carousel/carousel-images-second-section'
 import { AnimatedCarouselTopHome } from '@/components/carousel/animated-carousel-top-home.tsx'
-import { ImageWithScrollEffect } from '@/components/image-with-scroll-effect'
-import { ContentScrollEffect } from '@/components/content-scroll-effect'
-import { VideoScrollEffect } from '@/components/video-scroll-effect'
+import { ImageWithScrollEffect } from '@/components/scroll-effect/image-with-scroll-effect'
+import { VideoScrollEffect } from '@/components/scroll-effect/video-scroll-effect'
 import '@/assets/styles/utilities/backgrounds-section.css'
 import '@/assets/styles/utilities/bg-rise-fade.css'
 import Image from 'next/image'
@@ -40,7 +42,7 @@ export default function Home() {
 
       <ImageWithScrollEffect />
 
-      <section className="background-2 w-full">
+      <section className="background-2 w-full max-sm_custom_1:pb-44">
         <section className="relative overflow-hidden">
           <Image
             width={1000}
@@ -103,43 +105,29 @@ export default function Home() {
           </h2>
 
           <div className="relative">
-            <ContentScrollEffect />
+            <ContentCreatorsScrollEffect />
 
             <VideoScrollEffect />
           </div>
         </section>
 
-        <section className="h-screen pt-44">
-          {/* <h2>Transformando paixões em companhia</h2>
+        <section className="px-4 pt-20 max-sm_custom_1:pt-44 sm_custom_1:mt-96">
+          <h2 className="flex flex-col text-custom_5 font-light leading-none tracking-tighter mix-blend-exclusion sm_custom_1:ml-8/100 xl:w-custom_4">
+            <span>Transformando</span>
+            <span className="sm_custom_1:pr-16 sm_custom_1:text-end">
+              paixões em
+            </span>
+            <span className="sm_custom_1:pr-16 sm_custom_1:text-end">
+              companhia
+            </span>
+          </h2>
 
-          <div>
-            <div>
-              <h3>Mais formas de ganhar</h3>
+          <ContentTransformScrollEffect />
 
-              <p>
-                No Patreon, você pode construir um negócio duradouro fora do
-                ecossistema baseado em anúncios, com fontes de receita que vão
-                desde a associação para oferecer benefícios contínuos até lojas
-                on-line para vender vídeos individuais, episódios de podcast e
-                muito mais.
-              </p>
-
-              <button>Configure uma loja</button>
-            </div>
-
-            <div>
-              <h3>Desbloqueie o crescimento</h3>
-
-              <p>
-                O Patreon não serve apenas para o crescimento criativo, é também
-                para o crescimento profissional. Obtenha análises detalhadas
-                sobre seus fãs, explore ferramentas poderosas de gerenciamento
-                de relacionamento e explore uma crescente comunidade de
-                criadores.
-              </p>
-            </div>
-          </div> */}
+          <MembershipPanelScrollEffect />
         </section>
+
+        <div className="h-[60vh] max-sm_custom_1:hidden lg:h-[70vh]" />
       </section>
     </main>
   )
