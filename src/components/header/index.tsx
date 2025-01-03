@@ -5,6 +5,7 @@ import { mainListNavigation } from '@/constants/main-list-navigation'
 import { useHoverBackground } from '@/hooks/use-hover-background'
 import '@/assets/styles/utilities/bg-rise-fade.css'
 import { SubMenu } from '@/components/sub-menu'
+import { useScroll } from '@/hooks/use-scroll'
 import { InputHeader } from './input-header'
 import { Equal } from 'lucide-react'
 import Image from 'next/image'
@@ -14,11 +15,14 @@ export function Header() {
   const { eventIndicator, handleEventMenu, handleMouseLeave, navRef } =
     useHoverBackground()
 
+  const { scrolled } = useScroll()
+
   return (
     <header
       onMouseLeave={handleMouseLeave}
       data-value={eventIndicator.visible}
-      className="fixed left-0 top-0 z-20 w-screen data-[value=true]:text-black"
+      data-scroll={scrolled}
+      className="fixed left-0 top-0 z-20 w-screen duration-300 data-[scroll=true]:bg-white/60 data-[scroll=true]:text-c1 data-[value=true]:text-black"
     >
       <div className="relative flex w-full items-center justify-between gap-2 p-custom_container_header max-md:flex-wrap">
         <div className="absolute left-0 top-0 flex w-full items-end max-md:hidden">
@@ -65,8 +69,9 @@ export function Header() {
               )
             })}
             <li
+              data-scroll={scrolled}
               data-value={eventIndicator.visible}
-              className="bg-rise-fade group cursor-pointer font-medium hover:border-transparent data-[value=true]:border-black data-[value=true]:hover:text-white data-[value=true]:hover:before:bg-black md:border"
+              className="bg-rise-fade group cursor-pointer font-medium hover:border-transparent data-[scroll=true]:border-c1 data-[value=true]:border-black data-[value=true]:hover:text-white data-[value=true]:hover:before:bg-black md:border"
             >
               <Link href="#">
                 <div className="overflow-hidden">
@@ -81,7 +86,10 @@ export function Header() {
 
         <nav className="z-10 lg:flex lg:w-full lg:items-center lg:justify-center">
           <ul className="flex items-center gap-3">
-            <li className="max-md_middle:hidden">
+            <li
+              data-scroll={scrolled}
+              className="data-[scroll=true]:hidden max-md_middle:hidden"
+            >
               <Link
                 href="#"
                 className="text-custom_patreon font-medium uppercase tracking-wider"
@@ -94,12 +102,15 @@ export function Header() {
                 <Equal className="h-7.5 w-7.5" />
               </Link>
             </li>
-            <li className="md_middle:hidden">
+            <li
+              data-scroll={scrolled}
+              className="data-[scroll=true]:flex md_middle:hidden"
+            >
               <Link href="#">
                 <Image
                   width={200}
                   height={200}
-                  src={`/img/logo/${eventIndicator.visible ? 'patreon-dark' : 'patreon'}.png`}
+                  src={`/img/logo/${eventIndicator.visible || scrolled ? 'patreon-dark' : 'patreon'}.png`}
                   alt="patreon logo marca"
                   className="h-9 w-9"
                 />
@@ -110,14 +121,17 @@ export function Header() {
 
         <div className="flex max-md:flex-col-reverse">
           <div className="flex w-full px-2 max-md:absolute max-md:left-0 max-md:top-[4.5rem] md:w-auto lg:w-64 lg:justify-end 2xl:w-96">
-            <InputHeader eventIndicatorVisible={eventIndicator.visible} />
+            <InputHeader
+              eventIndicatorVisible={eventIndicator.visible}
+              scrolled={scrolled}
+            />
           </div>
 
-          <nav className="flex items-center gap-2">
+          <nav data-scroll={scrolled} className="group flex items-center gap-2">
             <Link
               href="#"
               data-value={eventIndicator.visible}
-              className="bg-rise-fade group px-3 py-2 data-[value=true]:border-black data-[value=true]:text-black data-[value=true]:hover:text-white data-[value=true]:hover:before:bg-black md:border md:p-custom_1 md:text-white"
+              className="bg-rise-fade group px-3 py-2 data-[value=true]:border-black data-[value=true]:text-black data-[value=true]:hover:text-white data-[value=true]:hover:before:bg-black group-data-[scroll=true]:border-c1 group-data-[scroll=true]:text-c1 md:border md:p-custom_1 md:text-white"
             >
               <div className="overflow-hidden">
                 <span className="bg-rise-fade-content before:content-['Faça_o_login'] group-hover:animate-rise-from-bottom">

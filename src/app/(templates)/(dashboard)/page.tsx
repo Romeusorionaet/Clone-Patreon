@@ -6,7 +6,7 @@ import '@/assets/styles/utilities/bg-rise-fade.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Home() {
+export default function Dashboard() {
   return (
     <main>
       <AnimatedCarouselTopHome />
