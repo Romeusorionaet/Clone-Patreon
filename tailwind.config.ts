@@ -12,6 +12,7 @@ export default {
         '1/5': '20%',
         '6/100': '6%',
         '12/100': '12%',
+        '28/100': '28%',
       },
 
       variants: {
@@ -36,16 +37,19 @@ export default {
         custom_2: 'clamp(0.80rem, 1.1vw, 1.2rem)',
         custom_3: 'clamp(5rem, 12vw, 14rem)',
         custom_4: 'clamp(0.80rem, 1.2vw, 1.6rem)',
-        custom_5: 'clamp(3rem, 9vw, 9rem)',
-        custom_6: 'clamp(1.4rem, 1.5vw, 1.6rem)',
+        custom_5: 'clamp(3rem, 9vw, 9.5rem)',
+        custom_6: 'clamp(1.3rem, 1.5vw, 1.6rem)',
         custom_7: 'clamp(0.90rem, 1vw, 1.2rem)',
         custom_8: 'clamp(1.2rem, 2.5vw, 2.8rem)',
         custom_9: 'clamp(1.8rem, 2.8vw, 3rem)',
-        custom_10: 'clamp(0.90rem, 1vw, 1.4rem)',
+        custom_10: 'clamp(0.80rem, 1vw, 1.4rem)',
         custom_11: 'clamp(1rem, 1.6vw, 2rem)',
       },
 
       padding: {
+        '4/100': '4%',
+        '5/100': '5%',
+        '14/100': '14%',
         custom_container_header: 'clamp(1rem, 2.5vw, 3rem)',
         custom_1: 'clamp(0.60rem, 0.95vw, 1.4rem)',
         custom_2: 'clamp(5rem, 8vw, 12rem)',
@@ -57,31 +61,34 @@ export default {
       },
 
       gap: {
+        '10/100': '10%',
         custom_1: 'clamp(0.70rem, 1vw, 1.4rem)',
       },
 
       margin: {
+        '5/100': '5%',
+        '15/100': '15%',
         custom_1: 'clamp(1rem, 1.9vw, 2.5rem)',
         custom_2: 'clamp(10rem, 19.5vw, 24rem)',
         custom_3: 'clamp(5rem, 10vw, 14rem)',
-        '15/100': '15%',
-        '8/100': '8%',
       },
 
       width: {
+        '70/100': '70%',
+        '95/100': '95%',
         '20vw': '20vw',
         34: '134px',
         129: '34rem',
-        '8.5/12': '70%',
         custom_1: 'clamp(3rem, 5vw, 6rem)',
         custom_2: 'clamp(3.5rem, 5vw, 6rem)',
         custom_3: 'clamp(12rem, 34vw, 40rem)',
-        custom_4: 'clamp(70rem, 86vw, 86rem)',
-        custom_5: 'clamp(12rem, 24vw, 30rem)',
+        custom_4: 'clamp(70rem, 86vw, 90rem)',
+        custom_5: 'clamp(17rem, 30vw, 34rem)',
+        custom_6: 'clamp(12rem, 26vw, 30rem)',
       },
 
       height: {
-        '85': '85vh',
+        '85vh': '85vh',
         '90vh': '90vh',
         '150vh': '115vh',
         custom_1: 'clamp(47rem, 69vw, 74rem)',
@@ -90,10 +97,12 @@ export default {
         custom_4: 'clamp(3.5rem, 5vw, 6rem)',
         custom_5: 'clamp(40rem, 65vw, 95rem)',
         custom_6: 'clamp(30rem, 45vw, 50rem)',
+        custom_7: 'clamp(25rem, 45vw, 50rem)',
+        custom_8: 'clamp(30rem, 55vw, 60rem)',
       },
 
       screens: {
-        sm_custom_1: '768px',
+        sm_custom_1: '768px', // mesmo tamanho do md
         md_custom_1: '832px',
         md_custom_2: '877px',
         md_middle: '850px',
