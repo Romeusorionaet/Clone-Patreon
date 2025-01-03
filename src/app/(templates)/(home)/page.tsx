@@ -153,8 +153,8 @@ export default function Home() {
         <section className="px-4 pt-20 max-md:pt-44 md:mt-32 md:px-4/100 xl:px-5/100">
           <h2 className="flex flex-col text-custom_5 font-light leading-none tracking-tighter mix-blend-exclusion md:ml-5/100 xl:w-custom_4">
             <span>Transformando</span>
-            <span className="md:pr-16 sm_custom_1:text-end">paixões em</span>
-            <span className="md:pr-16 sm_custom_1:text-end">companhia</span>
+            <span className="md:pr-16 md:text-end">paixões em</span>
+            <span className="md:pr-16 md:text-end">companhia</span>
           </h2>
 
           <div className="flex space-y-10 max-md:flex-col-reverse md:gap-10/100 md:pl-14/100">
@@ -204,7 +204,7 @@ export default function Home() {
                 </div>
 
                 <div className="space-y-6">
-                  <h3 className="text-custom_11 font-medium max-sm_custom_1:text-2xl">
+                  <h3 className="text-custom_11 font-medium max-md:text-2xl">
                     Desbloqueie o crescimento
                   </h3>
 

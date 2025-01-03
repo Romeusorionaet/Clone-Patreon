@@ -9,9 +9,6 @@ export default {
   theme: {
     extend: {
       inset: {
-        '1/5': '20%',
-        '6/100': '6%',
-        '12/100': '12%',
         '28/100': '28%',
       },
 
@@ -54,7 +51,6 @@ export default {
         custom_container_header: 'clamp(1rem, 2.5vw, 3rem)',
         custom_1: 'clamp(0.60rem, 0.95vw, 1.4rem)',
         custom_2: 'clamp(5rem, 8vw, 12rem)',
-        custom_3: 'clamp(4.5rem, 7.5vw, 12rem)',
       },
 
       spacing: {
@@ -77,9 +73,7 @@ export default {
       width: {
         '70/100': '70%',
         '95/100': '95%',
-        '20vw': '20vw',
         34: '134px',
-        129: '34rem',
         custom_1: 'clamp(3rem, 5vw, 6rem)',
         custom_2: 'clamp(3.5rem, 5vw, 6rem)',
         custom_3: 'clamp(12rem, 34vw, 40rem)',
@@ -92,24 +86,21 @@ export default {
 
       height: {
         '85vh': '85vh',
-        '90vh': '90vh',
         '150vh': '115vh',
         custom_1: 'clamp(47rem, 69vw, 74rem)',
         custom_2: 'clamp(40rem, 66vw, 70rem)',
         custom_3: 'clamp(3rem, 5vw, 6rem)',
         custom_4: 'clamp(3.5rem, 5vw, 6rem)',
         custom_5: 'clamp(40rem, 65vw, 95rem)',
-        custom_6: 'clamp(30rem, 45vw, 50rem)',
         custom_7: 'clamp(25rem, 45vw, 50rem)',
         custom_8: 'clamp(30rem, 55vw, 60rem)',
         custom_9: 'clamp(20rem, 28vw, 35rem)',
       },
 
       screens: {
-        sm_custom_1: '768px', // mesmo tamanho do md
+        md_middle: '850px',
         md_custom_1: '832px',
         md_custom_2: '877px',
-        md_middle: '850px',
       },
 
       translate: {
