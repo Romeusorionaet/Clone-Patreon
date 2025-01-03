@@ -38,7 +38,7 @@ export default function Home() {
 
       <ImageWithScrollEffect />
 
-      <section className="background-2 w-full max-sm_custom_1:pb-44">
+      <div className="background-2 w-full pb-20 xl:pb-40">
         <section className="relative overflow-hidden">
           <Image
             width={1000}
@@ -220,8 +220,75 @@ export default function Home() {
             </div>
           </div>
         </section>
+      </div>
 
-        <div className="h-[60vh] max-sm_custom_1:hidden lg:h-[70vh]" />
+      <section className="bg-[url('https://c14.patreon.com/large_Patreon_website_Module2_2x_wide_72dpi_0000s_0009_Layer_0_a133299db7.jpg')] bg-cover bg-center bg-no-repeat px-6 py-32">
+        <div className="mx-auto justify-center rounded-3xl bg-c2 px-6 pb-20 pt-16 max-sm:pb-10 md:flex md:h-custom_9 md:w-custom_7 md:flex-col md:pt-10">
+          <div className="flex flex-col items-center gap-4 font-medium">
+            <Image
+              width={500}
+              height={500}
+              src="https://c5.patreon.com/external/marketing/new_marketing_pages/logomark-animated.webp"
+              alt=""
+              className="h-24 w-24 md:h-custom_3 md:w-custom_1"
+            />
+
+            <h4 className="text-custom_6 text-c1 md:text-custom_12">
+              Seu mundo para criar
+            </h4>
+
+            <div className="mt-4 flex max-w-72 flex-col gap-4">
+              <Link
+                href="#"
+                className="bg-rise-fade group rounded-full bg-c1 px-4 py-2 font-medium text-c2 before:bg-c1 hover:text-c2 md:p-custom_1 md:px-6"
+              >
+                <div className="overflow-hidden">
+                  <span className="bg-rise-fade-content text-center before:content-['Comece'] group-hover:animate-rise-from-bottom">
+                    Comece
+                  </span>
+                </div>
+              </Link>
+
+              <p className="text-center text-c1">
+                <span className="opacity-50">Já tem uma conta? </span>
+                <span className="font-medium underline opacity-100">
+                  Faça o login
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-16 flex justify-center gap-4 md:mt-6">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.patreon.android"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Get it on Google Play"
+            >
+              <Image
+                width={500}
+                height={500}
+                src="https://c14.patreon.com/google_app_store_button_white_pt_BR_5fabaed14e.png"
+                alt="Get it on Google Play"
+                className="max-w-44 max-sm:w-full md:w-custom_8"
+              />
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/patreon/id1044456188"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Download on the App Store"
+            >
+              <Image
+                width={500}
+                height={500}
+                src="https://c14.patreon.com/apple_app_store_button_white_pt_BR_2dcb287024.png"
+                alt="Download on the App Store"
+                className="max-w-44 max-sm:w-full md:w-custom_8"
+              />
+            </a>
+          </div>
+        </div>
       </section>
     </main>
   )
