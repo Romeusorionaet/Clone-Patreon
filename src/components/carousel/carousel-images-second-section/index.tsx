@@ -1,9 +1,8 @@
 'use client'
 
-import '@/assets/styles/utilities/Image-measurements-from-gallery-carousel.css'
+import '@/assets/styles/components/carousel-images-second-section.css'
 import { useWidthScreen } from '@/hooks/use-width-screen'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import '@/assets/styles/slide-slick/slick.css'
 import { ArrowRight } from 'lucide-react'
 import { Autoplay } from 'swiper/modules'
 import Image from 'next/image'

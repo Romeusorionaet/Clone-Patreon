@@ -1,6 +1,6 @@
-@tailwind utilities;
+@tailwind components;
 
-@layer utilities {
+@layer components {
     .wrapper-1 {
         .image-measurement-1 {
             img {

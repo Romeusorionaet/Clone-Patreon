@@ -11,7 +11,7 @@ import { ArrowControlLeft, ArrowControlRight } from '../arrows-carousel'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import { useSlickCarousel } from '@/hooks/use-slick-carousel'
 import React, { useRef, useState } from 'react'
-import '@/assets/styles/slide-slick/slick.css'
+import '@/assets/styles/components/slick.css'
 import Slider from 'react-slick'
 import Link from 'next/link'
 

@@ -1,4 +1,4 @@
-import '@/assets/styles/utilities/input-header-container.css'
+import '@/assets/styles/components/input-header.css'
 import { Search, X } from 'lucide-react'
 import { useState } from 'react'
 

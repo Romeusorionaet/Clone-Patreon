@@ -1,6 +1,6 @@
-@tailwind utilities;
+@tailwind components;
 
-@layer utilities {
+@layer components {
    .custom-width-title-features li a {
      @apply max-lg:w-34
    }
