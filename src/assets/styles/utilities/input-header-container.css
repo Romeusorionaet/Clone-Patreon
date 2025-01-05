@@ -6,7 +6,7 @@
      border border-white p-1 pl-3 duration-300 z-20
      focus-within:rounded-full 
      max-sm:focus-within:left-0 max-sm:focus-within:right-0 
-     max-md:w-full max-md:focus-within:bg-white max-md:focus-within:p-6 max-md:mx-auto max-md:focus-within:static
+     max-md:w-full max-md:focus-within:bg-white max-md:focus-within:p-4 max-md:mx-auto max-md:focus-within:static
      md:p-custom_1 md:focus-within:top-4 md:focus-within:inset-0 md:hover:bg-black md:hover:border-transparent md:focus-within:bg-black md:focus-within:border-transparent
      max-lg:w-24 max-lg:focus-within:absolute max-lg:focus-within:m-auto max-lg:focus-within:w-full
      lg:max-w-36 lg:focus-within:min-w-full 

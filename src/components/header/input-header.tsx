@@ -1,5 +1,3 @@
-'use client'
-
 import '@/assets/styles/utilities/input-header-container.css'
 import { Search, X } from 'lucide-react'
 import { useState } from 'react'
@@ -19,7 +17,7 @@ export function InputHeader({ eventIndicatorVisible, scrolled }: Props) {
     <div
       data-value={eventIndicatorVisible}
       data-scroll={scrolled}
-      className="input-header-container group data-[scroll=true]:border-c1 data-[value=true]:border-black"
+      className="input-header-container group focus-within:!mx-auto focus-within:!w-full data-[scroll=true]:mx-4 data-[scroll=true]:w-9 data-[scroll=true]:justify-center data-[scroll=true]:border-c1 data-[value=true]:border-black"
     >
       <button className="min-h-3 min-w-3 duration-300 max-md:group-focus-within:h-8 max-md:group-focus-within:w-8 max-md:group-focus-within:text-black">
         <Search className="h-5 w-5 md:group-focus-within:text-white md:group-hover:text-white" />

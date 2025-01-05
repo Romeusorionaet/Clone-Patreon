@@ -22,7 +22,7 @@ export function Header() {
       onMouseLeave={handleMouseLeave}
       data-value={eventIndicator.visible}
       data-scroll={scrolled}
-      className="fixed left-0 top-0 z-20 w-screen duration-300 data-[scroll=true]:bg-white/60 data-[scroll=true]:text-c1 data-[value=true]:text-black"
+      className="fixed left-0 top-0 z-20 w-screen duration-300 data-[scroll=true]:bg-white/60 data-[scroll=true]:text-c1 data-[value=true]:text-black data-[scroll=true]:max-md:h-36"
     >
       <div className="relative flex w-full items-center justify-between gap-2 p-custom_container_header max-md:flex-wrap">
         <div className="absolute left-0 top-0 flex w-full items-end max-md:hidden">
@@ -120,7 +120,10 @@ export function Header() {
         </nav>
 
         <div className="flex max-md:flex-col-reverse">
-          <div className="flex w-full px-2 max-md:absolute max-md:left-0 max-md:top-[4.5rem] md:w-auto lg:w-64 lg:justify-end 2xl:w-96">
+          <div
+            data-scroll={scrolled}
+            className="flex w-full px-2 duration-300 max-md:absolute max-md:left-0 max-md:top-[4.5rem] md:w-auto lg:w-64 lg:justify-end 2xl:w-96"
+          >
             <InputHeader
               eventIndicatorVisible={eventIndicator.visible}
               scrolled={scrolled}
