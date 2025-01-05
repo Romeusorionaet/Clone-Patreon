@@ -17,7 +17,7 @@ export function InputHeader({ eventIndicatorVisible, scrolled }: Props) {
     <div
       data-value={eventIndicatorVisible}
       data-scroll={scrolled}
-      className="input-header-container group focus-within:!mx-auto focus-within:!w-full data-[scroll=true]:mx-4 data-[scroll=true]:justify-center data-[scroll=true]:border-c1 data-[value=true]:border-black data-[scroll=true]:max-md:w-9"
+      className="input-header-container group focus-within:!mx-auto focus-within:!w-full data-[scroll=true]:mx-4 data-[scroll=true]:border-c1 data-[value=true]:border-black data-[scroll=true]:max-md:w-9 data-[scroll=true]:max-md:justify-center"
     >
       <button className="min-h-3 min-w-3 duration-300 max-md:group-focus-within:h-8 max-md:group-focus-within:w-8 max-md:group-focus-within:text-black">
         <Search className="h-5 w-5 md:group-focus-within:text-white md:group-hover:text-white" />
