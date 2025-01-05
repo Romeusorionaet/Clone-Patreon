@@ -21,6 +21,7 @@ export default {
       colors: {
         c1: '#000',
         c2: '#fff',
+        c3: '#27272a',
       },
 
       fontFamily: {
@@ -83,6 +84,7 @@ export default {
         custom_6: 'clamp(12rem, 26vw, 30rem)',
         custom_7: 'clamp(12rem, 28vw, 30rem)',
         custom_8: 'clamp(4rem, 6vw, 8rem)',
+        custom_9: 'clamp(9rem, 16vw, 18rem)',
       },
 
       height: {

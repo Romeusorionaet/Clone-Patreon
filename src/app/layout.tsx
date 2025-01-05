@@ -1,8 +1,9 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import '../assets/styles/base/globals.css'
-import { Header } from '@/components/header'
 import ClientProviders from '@/utils/client-providers'
+import { Footer } from '@/components/footer'
+import { Header } from '@/components/header'
+import '../assets/styles/base/globals.css'
+import { Inter } from 'next/font/google'
+import type { Metadata } from 'next'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -26,6 +27,7 @@ export default function RootLayout({
         <ClientProviders>
           <Header />
           {children}
+          <Footer />
         </ClientProviders>
       </body>
     </html>
