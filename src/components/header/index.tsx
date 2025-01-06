@@ -120,17 +120,17 @@ export function Header() {
         </nav>
 
         <div className="flex max-md:flex-col-reverse">
-          <div className="flex  pr-2 duration-300 max-md:absolute max-md:left-0 max-md:top-[4.5rem] md:w-auto lg:w-64 lg:justify-end 2xl:w-96">
+          <div
+            data-scroll={scrolled}
+            className="flex duration-300 max-md:absolute max-md:left-0 max-md:top-[4.5rem] max-md:w-full max-md:justify-center data-[scroll=true]:max-md:justify-start md:w-auto md:pr-2 lg:w-64 lg:justify-end 2xl:w-96"
+          >
             <InputHeader
               eventIndicatorVisible={eventIndicator.visible}
               scrolled={scrolled}
             />
           </div>
 
-          <nav
-            data-scroll={scrolled}
-            className="group flex items-center gap-2 data-[scroll=true]:md:gap-5"
-          >
+          <nav data-scroll={scrolled} className="group flex items-center gap-2">
             <Link
               href="#"
               data-value={eventIndicator.visible}
