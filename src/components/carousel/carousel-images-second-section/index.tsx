@@ -13,11 +13,14 @@ export function CarouselImagesSecondSection() {
   const { widthScreen } = useWidthScreen()
 
   const getSlidesPerView = () => {
+    if (!widthScreen) return 1.3
     if (widthScreen > 768) return 3
     if (widthScreen <= 768 && widthScreen > 568) return 2
     if (widthScreen <= 568) return 1.3
-    return 1
+    return 1.3
   }
+
+  const speedSwiper = widthScreen && widthScreen <= 768 ? 10000 : 20000
 
   return (
     <section className="max-md:mb-36 md:mt-20">
@@ -26,7 +29,7 @@ export function CarouselImagesSecondSection() {
           delay: 0,
           disableOnInteraction: false,
         }}
-        speed={widthScreen <= 768 ? 10000 : 20000}
+        speed={speedSwiper}
         spaceBetween={0}
         slidesPerView={getSlidesPerView()}
         loop

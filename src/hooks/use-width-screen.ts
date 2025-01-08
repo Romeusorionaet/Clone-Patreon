@@ -1,17 +1,17 @@
 import { useEffect, useState } from 'react'
 
 export function useWidthScreen() {
-  const [widthScreen, setWidthScreen] = useState<number>(0)
+  const [widthScreen, setWidthScreen] = useState<number | null>(null)
 
   useEffect(() => {
-    const handleResize = () => {
+    if (typeof window !== 'undefined') {
+      const handleResize = () => setWidthScreen(window.innerWidth)
+
       setWidthScreen(window.innerWidth)
-    }
 
-    window.addEventListener('resize', handleResize)
+      window.addEventListener('resize', handleResize)
 
-    return () => {
-      window.removeEventListener('resize', handleResize)
+      return () => window.removeEventListener('resize', handleResize)
     }
   }, [])
 

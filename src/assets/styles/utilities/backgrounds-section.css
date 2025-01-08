@@ -1,5 +1,6 @@
 .background-1 {
     background-color: rgb(149, 173, 203);
+    background-attachment: fixed;
     background-image: 
         radial-gradient(83% 108% at 28% 28%, 
             rgba(204, 228, 255, 0.3) -10%, 
@@ -22,10 +23,12 @@
         radial-gradient(25% 37% at 95% 2%, 
             rgb(176, 200, 231) 0%, 
             rgba(176, 200, 231, 0) 90%);
+        transition: opacity 2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .background-2 {
     background-color: rgb(148, 187, 255);
+    background-attachment: fixed;
     background-image: 
       radial-gradient(
         89% 95% at 32% 25%, 
@@ -60,9 +63,6 @@
         rgb(180, 215, 255) 0%, 
         rgba(180, 215, 255, 0) 90%
       );
+      transition: opacity 2s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-  
-
-  
-  
   
