@@ -12,6 +12,13 @@ import 'swiper/css/bundle'
 export function CarouselImagesSecondSection() {
   const { widthScreen } = useWidthScreen()
 
+  const getSlidesPerView = () => {
+    if (widthScreen > 768) return 3
+    if (widthScreen <= 768 && widthScreen > 568) return 2
+    if (widthScreen <= 568) return 1.3
+    return 1
+  }
+
   return (
     <section className="max-md:mb-36 md:mt-20">
       <Swiper
@@ -21,7 +28,7 @@ export function CarouselImagesSecondSection() {
         }}
         speed={widthScreen <= 768 ? 10000 : 20000}
         spaceBetween={0}
-        slidesPerView={widthScreen <= 768 ? 1.1 : 3}
+        slidesPerView={getSlidesPerView()}
         loop
         modules={[Autoplay]}
       >
