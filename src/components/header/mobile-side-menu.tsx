@@ -21,12 +21,12 @@ export function MobileSideMenu() {
     <aside
       aria-label="Menu lateral"
       data-value={sideMenuIsOpen}
-      className="absolute z-30 w-full bg-c1 text-c2 duration-300 data-[value=false]:-ml-[100%]"
+      className="absolute z-30 w-full bg-c1 text-c2 duration-300 data-[value=false]:-ml-100/100"
     >
       <aside
         aria-label="Sub Menu lateral"
         data-value={subMenuIsOpen}
-        className="absolute z-40 w-full bg-c1 text-c2 duration-300 data-[value=false]:-ml-[100%]"
+        className="absolute z-40 w-full bg-c1 text-c2 duration-300 data-[value=false]:-ml-100/100"
       >
         <div className="relative w-full pt-5">
           <h1 className="text-center text-lg">{menuItem}</h1>

@@ -1,12 +1,12 @@
 import { CircleDollarSignIcon, Globe } from 'lucide-react'
+import { AppStoreLinks } from '../app-store-links'
 import { SubMenuFooter } from './sub-menu-footer'
 import '@/assets/styles/components/footer.css'
 import Image from 'next/image'
-import { AppStoreLinks } from '../app-store-links'
 
 export function Footer() {
   return (
-    <footer className="bg-c1 px-[3%] pb-20 pt-10">
+    <footer className="bg-c1 px-3/100 pb-20 pt-10">
       <SubMenuFooter />
 
       <AppStoreLinks />
@@ -101,7 +101,7 @@ export function Footer() {
           </svg>
         </div>
 
-        <address className="w-[35%] text-end max-md:w-full max-md:text-center lg:w-[20%] xl:w-[35%] xl:gap-2">
+        <address className="w-35/100 text-end max-md:w-full max-md:text-center lg:w-1/5 xl:w-35/100 xl:gap-2">
           <span>600 Townsend Street, Suite 500 </span>
           <br className="xl:hidden" />
           <span>San Francisco, CA 94103, USA </span>

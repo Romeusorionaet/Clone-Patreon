@@ -2,8 +2,8 @@
 
 import { subMenuFooter } from '@/constants/sub-meu-footer'
 import { Minus, Plus } from 'lucide-react'
-import Link from 'next/link'
 import { useState } from 'react'
+import Link from 'next/link'
 
 export function SubMenuFooter() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
@@ -43,13 +43,13 @@ export function SubMenuFooter() {
         ))}
       </div>
 
-      <div className="flex w-full justify-between gap-[4%] max-md:hidden">
+      <div className="flex w-full justify-between gap-4/100 max-md:hidden">
         {subMenuFooter.map((section, index) => (
-          <ul key={index} className="w-[18%]">
-            <li className="">{section.title}</li>
+          <ul key={index} className="w-18/100">
+            <li>{section.title}</li>
             <ul className="mt-4 space-y-1 opacity-50 xl:mt-6">
               {section.items.map((item, i) => (
-                <li key={i} className="">
+                <li key={i}>
                   <Link href="#">{item}</Link>
                 </li>
               ))}

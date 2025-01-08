@@ -100,7 +100,7 @@ export default function Dashboard() {
             Criadores. Fãs. <br /> Nada em <br /> entre.
           </h2>
 
-          <div className="flex justify-between max-md:flex-col md:pl-[14%] xl:pl-[13%]">
+          <div className="flex justify-between max-md:flex-col md:pl-14/100 xl:pl-13/100">
             <div
               data-scroll
               data-scroll-speed={-0.04}

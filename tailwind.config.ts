@@ -46,8 +46,10 @@ export default {
       },
 
       padding: {
+        '3/100': '3%',
         '4/100': '4%',
         '5/100': '5%',
+        '13/100': '13%',
         '14/100': '14%',
         custom_container_header: 'clamp(1rem, 2.5vw, 3rem)',
         custom_1: 'clamp(0.60rem, 0.95vw, 1.4rem)',
@@ -60,6 +62,7 @@ export default {
       },
 
       gap: {
+        '4/100': '4%',
         '10/100': '10%',
         custom_1: 'clamp(0.70rem, 1vw, 1.4rem)',
       },
@@ -67,12 +70,15 @@ export default {
       margin: {
         '5/100': '5%',
         '15/100': '15%',
+        '100/100': '100%',
         custom_1: 'clamp(1rem, 1.9vw, 2.5rem)',
         custom_2: 'clamp(10rem, 19.5vw, 24rem)',
         custom_3: 'clamp(5rem, 10vw, 14rem)',
       },
 
       width: {
+        '18/100': '18%',
+        '35/100': '35%',
         '70/100': '70%',
         '95/100': '95%',
         34: '134px',
