@@ -1,13 +1,16 @@
 'use client'
 
+import { MobileSideMenuFormContext } from '@/context/mobile-side-menu-provider'
 import { HoverBackgroundIndicator } from './hover-background-Indicator'
 import { mainListNavigation } from '@/constants/main-list-navigation'
 import { useHoverBackground } from '@/hooks/use-hover-background'
+import { MobileSideMenu } from './mobile-side-menu'
 import '@/assets/styles/utilities/bg-rise-fade.css'
 import { SubMenu } from '@/components/sub-menu'
 import { useScroll } from '@/hooks/use-scroll'
 import { InputHeader } from './input-header'
 import { Equal } from 'lucide-react'
+import { useContext } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -17,6 +20,8 @@ export function Header() {
 
   const { scrolled } = useScroll()
 
+  const { handleSideMenu } = useContext(MobileSideMenuFormContext)
+
   return (
     <header
       onMouseLeave={handleMouseLeave}
@@ -24,6 +29,8 @@ export function Header() {
       data-scroll={scrolled}
       className="fixed left-0 top-0 z-20 w-screen duration-300 data-[scroll=true]:bg-white/60 data-[scroll=true]:text-c1 data-[value=true]:text-black data-[scroll=true]:max-md:h-36"
     >
+      <MobileSideMenu />
+
       <div className="relative flex w-full items-center justify-between gap-2 p-custom_container_header max-md:flex-wrap">
         <div className="absolute left-0 top-0 flex w-full items-end max-md:hidden">
           <SubMenu
@@ -98,9 +105,9 @@ export function Header() {
               </Link>
             </li>
             <li className="md:hidden">
-              <Link href="#">
+              <button onClick={() => handleSideMenu()}>
                 <Equal className="h-7.5 w-7.5" />
-              </Link>
+              </button>
             </li>
             <li
               data-scroll={scrolled}
@@ -130,11 +137,12 @@ export function Header() {
             />
           </div>
 
-          <nav data-scroll={scrolled} className="group flex items-center gap-2">
+          <nav data-scroll={scrolled} className="flex items-center gap-2">
             <Link
               href="#"
               data-value={eventIndicator.visible}
-              className="bg-rise-fade group px-3 py-2 data-[value=true]:border-black data-[value=true]:text-black data-[value=true]:hover:text-white data-[value=true]:hover:before:bg-black group-data-[scroll=true]:border-c1 group-data-[scroll=true]:text-c1 md:border md:p-custom_1 md:text-white"
+              data-scroll={scrolled}
+              className="bg-rise-fade group px-3 py-2 data-[scroll=true]:border-c1 data-[value=true]:border-black data-[value=true]:text-black data-[value=true]:hover:text-white data-[value=true]:hover:before:bg-black group-data-[scroll=true]:text-c1 md:border md:p-custom_1 md:text-white"
             >
               <div className="overflow-hidden">
                 <span className="bg-rise-fade-content before:content-['Faça_o_login'] group-hover:animate-rise-from-bottom">

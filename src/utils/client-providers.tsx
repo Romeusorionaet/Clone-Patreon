@@ -1,5 +1,6 @@
 'use client'
 
+import { MobileSideMenuFormContextProvider } from '@/context/mobile-side-menu-provider'
 import LocomotiveScroll, { ILocomotiveScrollOptions } from 'locomotive-scroll'
 import { ReactNode, useEffect, useRef } from 'react'
 
@@ -23,5 +24,11 @@ export default function ClientProviders({ children }: { children: ReactNode }) {
     }
   }, [])
 
-  return <div ref={scrollContainerRef}>{children}</div>
+  return (
+    <div ref={scrollContainerRef}>
+      <MobileSideMenuFormContextProvider>
+        {children}
+      </MobileSideMenuFormContextProvider>
+    </div>
+  )
 }
