@@ -20,7 +20,7 @@ export function CarouselImagesSecondSection() {
     return 1.3
   }
 
-  const speedSwiper = widthScreen && widthScreen <= 768 ? 10000 : 20000
+  const speedSwiper = (widthScreen ?? 0) <= 768 ? 10000 : 20000
 
   return (
     <section className="max-md:mb-36 md:mt-20">

@@ -6,6 +6,8 @@ import Image from 'next/image'
 export function ImageWithScrollEffect() {
   const { widthScreen } = useWidthScreen()
 
+  const scrollSpeed = (widthScreen ?? 0) > 768 ? 0.2 : 0.08
+
   return (
     <section className="relative flex h-85vh items-end md:h-custom_5">
       <div className="flex h-1/2 w-full justify-evenly px-4 leading-none max-md:flex-col md:items-end md:justify-center md:gap-20 md:px-8 md:pb-6 md:leading-tight 2xl:px-16">
@@ -23,7 +25,7 @@ export function ImageWithScrollEffect() {
 
       <Image
         data-scroll
-        data-scroll-speed={widthScreen > 768 ? 0.2 : 0.08}
+        data-scroll-speed={scrollSpeed}
         width={1000}
         height={1000}
         src="https://c14.patreon.com/Patreon_Website_Module3_2_X_72dpi_Kamauu1_c26920eff8.jpg"
